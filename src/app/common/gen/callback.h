@@ -17465,3 +17465,10 @@ EmberStatus emberAfInterpanSendMessageCallback(EmberAfInterpanHeader * header, u
  *
  */
 bool emberAfStartMoveCallback();
+
+/** @brief Unknown Cluster Callback
+ *
+ * This function is called to handle unrecognized clusters.
+ *
+ */
+bool emberAfUnknownClusterCallBack(chip::app::Command * apCommandObj, chip::ClusterId aClusterId, chip::CommandId aCommandId, chip::EndpointId aEndpointId, uint8_t * commandData, uint32_t commandDataLength);

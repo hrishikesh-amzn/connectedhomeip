@@ -49,7 +49,9 @@ executable("chip-tv-app") {
     "include/tv-channel/TvChannelManager.h",
     "include/wake-on-lan/WakeOnLanManager.cpp",
     "include/wake-on-lan/WakeOnLanManager.h",
-    "main.cpp",
+    "include/default-cluster-handler/DefaultClusterManager.cpp",
+    "include/default-cluster-handler/DefaultClusterManager.h",
+    "main.cpp"
   ]
 
   deps = [
