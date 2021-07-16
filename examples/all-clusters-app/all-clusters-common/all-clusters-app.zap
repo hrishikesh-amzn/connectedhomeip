@@ -1721,15 +1721,15 @@
           ]
         },
         {
-          "name": "Software Diagnostics",
+          "name": "Do Something Cluster",
           "code": 52,
           "mfgCode": null,
-          "define": "SOFTWARE_DIAGNOSTICS_CLUSTER",
+          "define": "DO_SOMETHING_CLUSTER",
           "side": "client",
           "enabled": 0,
           "commands": [
             {
-              "name": "ResetWatermarks",
+              "name": "DoSomething",
               "code": 0,
               "mfgCode": null,
               "source": "client",
@@ -1756,29 +1756,14 @@
           ]
         },
         {
-          "name": "Software Diagnostics",
+          "name": "Do Something Cluster",
           "code": 52,
           "mfgCode": null,
-          "define": "SOFTWARE_DIAGNOSTICS_CLUSTER",
+          "define": "DO_SOMETHING_CLUSTER",
           "side": "server",
-          "enabled": 1,
+          "enabled": 0,
           "commands": [],
           "attributes": [
-            {
-              "name": "CurrentHeapHighWatermark",
-              "code": 3,
-              "mfgCode": null,
-              "side": "server",
-              "included": 1,
-              "storageOption": "RAM",
-              "singleton": 0,
-              "bounded": 0,
-              "defaultValue": "0x0000000000000000",
-              "reportable": 0,
-              "minInterval": 0,
-              "maxInterval": 65344,
-              "reportableChange": 0
-            },
             {
               "name": "cluster revision",
               "code": 65533,
@@ -7807,6 +7792,76 @@
               "source": "server",
               "incoming": 1,
               "outgoing": 1
+            }
+          ],
+          "attributes": [
+            {
+              "name": "cluster revision",
+              "code": 65533,
+              "mfgCode": null,
+              "side": "server",
+              "included": 1,
+              "storageOption": "RAM",
+              "singleton": 0,
+              "bounded": 0,
+              "defaultValue": "0x0001",
+              "reportable": 0,
+              "minInterval": 0,
+              "maxInterval": 65344,
+              "reportableChange": 0
+            }
+          ]
+        },
+        {
+          "name": "Do Something Cluster",
+          "code": 52,
+          "mfgCode": null,
+          "define": "DO_SOMETHING_CLUSTER",
+          "side": "client",
+          "enabled": 0,
+          "commands": [
+            {
+              "name": "DoSomething",
+              "code": 0,
+              "mfgCode": null,
+              "source": "client",
+              "incoming": 0,
+              "outgoing": 1
+            }
+          ],
+          "attributes": [
+            {
+              "name": "cluster revision",
+              "code": 65533,
+              "mfgCode": null,
+              "side": "client",
+              "included": 1,
+              "storageOption": "RAM",
+              "singleton": 0,
+              "bounded": 0,
+              "defaultValue": "0x0001",
+              "reportable": 0,
+              "minInterval": 0,
+              "maxInterval": 65344,
+              "reportableChange": 0
+            }
+          ]
+        },
+        {
+          "name": "Do Something Cluster",
+          "code": 52,
+          "mfgCode": null,
+          "define": "DO_SOMETHING_CLUSTER",
+          "side": "server",
+          "enabled": 1,
+          "commands": [
+            {
+              "name": "DoSomethingResponse",
+              "code": 1,
+              "mfgCode": null,
+              "source": "server",
+              "incoming": 1,
+              "outgoing": 0
             }
           ],
           "attributes": [
