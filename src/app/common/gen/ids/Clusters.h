@@ -27,316 +27,319 @@ namespace Clusters {
 
 namespace PowerConfiguration {
 static constexpr ClusterId Id = 0x0001;
-} // namespace PowerConfiguration
+} // namespace PowerConfiguration {
 namespace DeviceTemperatureConfiguration {
 static constexpr ClusterId Id = 0x0002;
-} // namespace DeviceTemperatureConfiguration
+} // namespace DeviceTemperatureConfiguration {
 namespace Identify {
 static constexpr ClusterId Id = 0x0003;
-} // namespace Identify
+} // namespace Identify {
 namespace Groups {
 static constexpr ClusterId Id = 0x0004;
-} // namespace Groups
+} // namespace Groups {
 namespace Scenes {
 static constexpr ClusterId Id = 0x0005;
-} // namespace Scenes
+} // namespace Scenes {
 namespace OnOff {
 static constexpr ClusterId Id = 0x0006;
-} // namespace OnOff
+} // namespace OnOff {
 namespace OnOffSwitchConfiguration {
 static constexpr ClusterId Id = 0x0007;
-} // namespace OnOffSwitchConfiguration
+} // namespace OnOffSwitchConfiguration {
 namespace LevelControl {
 static constexpr ClusterId Id = 0x0008;
-} // namespace LevelControl
+} // namespace LevelControl {
 namespace Alarms {
 static constexpr ClusterId Id = 0x0009;
-} // namespace Alarms
+} // namespace Alarms {
 namespace Time {
 static constexpr ClusterId Id = 0x000A;
-} // namespace Time
+} // namespace Time {
 namespace BinaryInputBasic {
 static constexpr ClusterId Id = 0x000F;
-} // namespace BinaryInputBasic
+} // namespace BinaryInputBasic {
 namespace PowerProfile {
 static constexpr ClusterId Id = 0x001A;
-} // namespace PowerProfile
+} // namespace PowerProfile {
 namespace ApplianceControl {
 static constexpr ClusterId Id = 0x001B;
-} // namespace ApplianceControl
+} // namespace ApplianceControl {
 namespace Descriptor {
 static constexpr ClusterId Id = 0x001D;
-} // namespace Descriptor
+} // namespace Descriptor {
 namespace PollControl {
 static constexpr ClusterId Id = 0x0020;
-} // namespace PollControl
+} // namespace PollControl {
 namespace Basic {
 static constexpr ClusterId Id = 0x0028;
-} // namespace Basic
+} // namespace Basic {
 namespace OtaSoftwareUpdateProvider {
 static constexpr ClusterId Id = 0x0029;
-} // namespace OtaSoftwareUpdateProvider
+} // namespace OtaSoftwareUpdateProvider {
 namespace OtaSoftwareUpdateRequestor {
 static constexpr ClusterId Id = 0x002A;
-} // namespace OtaSoftwareUpdateRequestor
+} // namespace OtaSoftwareUpdateRequestor {
 namespace GeneralCommissioning {
 static constexpr ClusterId Id = 0x0030;
-} // namespace GeneralCommissioning
+} // namespace GeneralCommissioning {
 namespace NetworkCommissioning {
 static constexpr ClusterId Id = 0x0031;
-} // namespace NetworkCommissioning
+} // namespace NetworkCommissioning {
 namespace DiagnosticLogs {
 static constexpr ClusterId Id = 0x0032;
-} // namespace DiagnosticLogs
+} // namespace DiagnosticLogs {
 namespace GeneralDiagnostics {
 static constexpr ClusterId Id = 0x0033;
-} // namespace GeneralDiagnostics
+} // namespace GeneralDiagnostics {
+namespace DoSomethingCluster {
+static constexpr ClusterId Id = 0x0034;
+} // namespace DoSomethingCluster {
 namespace SoftwareDiagnostics {
 static constexpr ClusterId Id = 0x0034;
-} // namespace SoftwareDiagnostics
+} // namespace SoftwareDiagnostics {
 namespace ThreadNetworkDiagnostics {
 static constexpr ClusterId Id = 0x0035;
-} // namespace ThreadNetworkDiagnostics
+} // namespace ThreadNetworkDiagnostics {
 namespace WiFiNetworkDiagnostics {
 static constexpr ClusterId Id = 0x0036;
-} // namespace WiFiNetworkDiagnostics
+} // namespace WiFiNetworkDiagnostics {
 namespace EthernetNetworkDiagnostics {
 static constexpr ClusterId Id = 0x0037;
-} // namespace EthernetNetworkDiagnostics
+} // namespace EthernetNetworkDiagnostics {
 namespace BridgedDeviceBasic {
 static constexpr ClusterId Id = 0x0039;
-} // namespace BridgedDeviceBasic
+} // namespace BridgedDeviceBasic {
 namespace Switch {
 static constexpr ClusterId Id = 0x003B;
-} // namespace Switch
+} // namespace Switch {
 namespace OperationalCredentials {
 static constexpr ClusterId Id = 0x003E;
-} // namespace OperationalCredentials
+} // namespace OperationalCredentials {
 namespace FixedLabel {
 static constexpr ClusterId Id = 0x0040;
-} // namespace FixedLabel
+} // namespace FixedLabel {
 namespace ShadeConfiguration {
 static constexpr ClusterId Id = 0x0100;
-} // namespace ShadeConfiguration
+} // namespace ShadeConfiguration {
 namespace DoorLock {
 static constexpr ClusterId Id = 0x0101;
-} // namespace DoorLock
+} // namespace DoorLock {
 namespace WindowCovering {
 static constexpr ClusterId Id = 0x0102;
-} // namespace WindowCovering
+} // namespace WindowCovering {
 namespace BarrierControl {
 static constexpr ClusterId Id = 0x0103;
-} // namespace BarrierControl
+} // namespace BarrierControl {
 namespace PumpConfigurationAndControl {
 static constexpr ClusterId Id = 0x0200;
-} // namespace PumpConfigurationAndControl
+} // namespace PumpConfigurationAndControl {
 namespace Thermostat {
 static constexpr ClusterId Id = 0x0201;
-} // namespace Thermostat
+} // namespace Thermostat {
 namespace FanControl {
 static constexpr ClusterId Id = 0x0202;
-} // namespace FanControl
+} // namespace FanControl {
 namespace DehumidificationControl {
 static constexpr ClusterId Id = 0x0203;
-} // namespace DehumidificationControl
+} // namespace DehumidificationControl {
 namespace ThermostatUserInterfaceConfiguration {
 static constexpr ClusterId Id = 0x0204;
-} // namespace ThermostatUserInterfaceConfiguration
+} // namespace ThermostatUserInterfaceConfiguration {
 namespace ColorControl {
 static constexpr ClusterId Id = 0x0300;
-} // namespace ColorControl
+} // namespace ColorControl {
 namespace BallastConfiguration {
 static constexpr ClusterId Id = 0x0301;
-} // namespace BallastConfiguration
+} // namespace BallastConfiguration {
 namespace IlluminanceMeasurement {
 static constexpr ClusterId Id = 0x0400;
-} // namespace IlluminanceMeasurement
+} // namespace IlluminanceMeasurement {
 namespace IlluminanceLevelSensing {
 static constexpr ClusterId Id = 0x0401;
-} // namespace IlluminanceLevelSensing
+} // namespace IlluminanceLevelSensing {
 namespace TemperatureMeasurement {
 static constexpr ClusterId Id = 0x0402;
-} // namespace TemperatureMeasurement
+} // namespace TemperatureMeasurement {
 namespace PressureMeasurement {
 static constexpr ClusterId Id = 0x0403;
-} // namespace PressureMeasurement
+} // namespace PressureMeasurement {
 namespace FlowMeasurement {
 static constexpr ClusterId Id = 0x0404;
-} // namespace FlowMeasurement
+} // namespace FlowMeasurement {
 namespace RelativeHumidityMeasurement {
 static constexpr ClusterId Id = 0x0405;
-} // namespace RelativeHumidityMeasurement
+} // namespace RelativeHumidityMeasurement {
 namespace OccupancySensing {
 static constexpr ClusterId Id = 0x0406;
-} // namespace OccupancySensing
+} // namespace OccupancySensing {
 namespace CarbonMonoxideConcentrationMeasurement {
 static constexpr ClusterId Id = 0x040C;
-} // namespace CarbonMonoxideConcentrationMeasurement
+} // namespace CarbonMonoxideConcentrationMeasurement {
 namespace CarbonDioxideConcentrationMeasurement {
 static constexpr ClusterId Id = 0x040D;
-} // namespace CarbonDioxideConcentrationMeasurement
+} // namespace CarbonDioxideConcentrationMeasurement {
 namespace EthyleneConcentrationMeasurement {
 static constexpr ClusterId Id = 0x040E;
-} // namespace EthyleneConcentrationMeasurement
+} // namespace EthyleneConcentrationMeasurement {
 namespace EthyleneOxideConcentrationMeasurement {
 static constexpr ClusterId Id = 0x040F;
-} // namespace EthyleneOxideConcentrationMeasurement
+} // namespace EthyleneOxideConcentrationMeasurement {
 namespace HydrogenConcentrationMeasurement {
 static constexpr ClusterId Id = 0x0410;
-} // namespace HydrogenConcentrationMeasurement
+} // namespace HydrogenConcentrationMeasurement {
 namespace HydrogenSulphideConcentrationMeasurement {
 static constexpr ClusterId Id = 0x0411;
-} // namespace HydrogenSulphideConcentrationMeasurement
+} // namespace HydrogenSulphideConcentrationMeasurement {
 namespace NitricOxideConcentrationMeasurement {
 static constexpr ClusterId Id = 0x0412;
-} // namespace NitricOxideConcentrationMeasurement
+} // namespace NitricOxideConcentrationMeasurement {
 namespace NitrogenDioxideConcentrationMeasurement {
 static constexpr ClusterId Id = 0x0413;
-} // namespace NitrogenDioxideConcentrationMeasurement
+} // namespace NitrogenDioxideConcentrationMeasurement {
 namespace OxygenConcentrationMeasurement {
 static constexpr ClusterId Id = 0x0414;
-} // namespace OxygenConcentrationMeasurement
+} // namespace OxygenConcentrationMeasurement {
 namespace OzoneConcentrationMeasurement {
 static constexpr ClusterId Id = 0x0415;
-} // namespace OzoneConcentrationMeasurement
+} // namespace OzoneConcentrationMeasurement {
 namespace SulfurDioxideConcentrationMeasurement {
 static constexpr ClusterId Id = 0x0416;
-} // namespace SulfurDioxideConcentrationMeasurement
+} // namespace SulfurDioxideConcentrationMeasurement {
 namespace DissolvedOxygenConcentrationMeasurement {
 static constexpr ClusterId Id = 0x0417;
-} // namespace DissolvedOxygenConcentrationMeasurement
+} // namespace DissolvedOxygenConcentrationMeasurement {
 namespace BromateConcentrationMeasurement {
 static constexpr ClusterId Id = 0x0418;
-} // namespace BromateConcentrationMeasurement
+} // namespace BromateConcentrationMeasurement {
 namespace ChloraminesConcentrationMeasurement {
 static constexpr ClusterId Id = 0x0419;
-} // namespace ChloraminesConcentrationMeasurement
+} // namespace ChloraminesConcentrationMeasurement {
 namespace ChlorineConcentrationMeasurement {
 static constexpr ClusterId Id = 0x041A;
-} // namespace ChlorineConcentrationMeasurement
+} // namespace ChlorineConcentrationMeasurement {
 namespace FecalColiformAndEColiConcentrationMeasurement {
 static constexpr ClusterId Id = 0x041B;
-} // namespace FecalColiformAndEColiConcentrationMeasurement
+} // namespace FecalColiformAndEColiConcentrationMeasurement {
 namespace FluorideConcentrationMeasurement {
 static constexpr ClusterId Id = 0x041C;
-} // namespace FluorideConcentrationMeasurement
+} // namespace FluorideConcentrationMeasurement {
 namespace HaloaceticAcidsConcentrationMeasurement {
 static constexpr ClusterId Id = 0x041D;
-} // namespace HaloaceticAcidsConcentrationMeasurement
+} // namespace HaloaceticAcidsConcentrationMeasurement {
 namespace TotalTrihalomethanesConcentrationMeasurement {
 static constexpr ClusterId Id = 0x041E;
-} // namespace TotalTrihalomethanesConcentrationMeasurement
+} // namespace TotalTrihalomethanesConcentrationMeasurement {
 namespace TotalColiformBacteriaConcentrationMeasurement {
 static constexpr ClusterId Id = 0x041F;
-} // namespace TotalColiformBacteriaConcentrationMeasurement
+} // namespace TotalColiformBacteriaConcentrationMeasurement {
 namespace TurbidityConcentrationMeasurement {
 static constexpr ClusterId Id = 0x0420;
-} // namespace TurbidityConcentrationMeasurement
+} // namespace TurbidityConcentrationMeasurement {
 namespace CopperConcentrationMeasurement {
 static constexpr ClusterId Id = 0x0421;
-} // namespace CopperConcentrationMeasurement
+} // namespace CopperConcentrationMeasurement {
 namespace LeadConcentrationMeasurement {
 static constexpr ClusterId Id = 0x0422;
-} // namespace LeadConcentrationMeasurement
+} // namespace LeadConcentrationMeasurement {
 namespace ManganeseConcentrationMeasurement {
 static constexpr ClusterId Id = 0x0423;
-} // namespace ManganeseConcentrationMeasurement
+} // namespace ManganeseConcentrationMeasurement {
 namespace SulfateConcentrationMeasurement {
 static constexpr ClusterId Id = 0x0424;
-} // namespace SulfateConcentrationMeasurement
+} // namespace SulfateConcentrationMeasurement {
 namespace BromodichloromethaneConcentrationMeasurement {
 static constexpr ClusterId Id = 0x0425;
-} // namespace BromodichloromethaneConcentrationMeasurement
+} // namespace BromodichloromethaneConcentrationMeasurement {
 namespace BromoformConcentrationMeasurement {
 static constexpr ClusterId Id = 0x0426;
-} // namespace BromoformConcentrationMeasurement
+} // namespace BromoformConcentrationMeasurement {
 namespace ChlorodibromomethaneConcentrationMeasurement {
 static constexpr ClusterId Id = 0x0427;
-} // namespace ChlorodibromomethaneConcentrationMeasurement
+} // namespace ChlorodibromomethaneConcentrationMeasurement {
 namespace ChloroformConcentrationMeasurement {
 static constexpr ClusterId Id = 0x0428;
-} // namespace ChloroformConcentrationMeasurement
+} // namespace ChloroformConcentrationMeasurement {
 namespace SodiumConcentrationMeasurement {
 static constexpr ClusterId Id = 0x0429;
-} // namespace SodiumConcentrationMeasurement
+} // namespace SodiumConcentrationMeasurement {
 namespace IasZone {
 static constexpr ClusterId Id = 0x0500;
-} // namespace IasZone
+} // namespace IasZone {
 namespace IasAce {
 static constexpr ClusterId Id = 0x0501;
-} // namespace IasAce
+} // namespace IasAce {
 namespace IasWd {
 static constexpr ClusterId Id = 0x0502;
-} // namespace IasWd
+} // namespace IasWd {
 namespace WakeOnLan {
 static constexpr ClusterId Id = 0x0503;
-} // namespace WakeOnLan
+} // namespace WakeOnLan {
 namespace TvChannel {
 static constexpr ClusterId Id = 0x0504;
-} // namespace TvChannel
+} // namespace TvChannel {
 namespace TargetNavigator {
 static constexpr ClusterId Id = 0x0505;
-} // namespace TargetNavigator
+} // namespace TargetNavigator {
 namespace MediaPlayback {
 static constexpr ClusterId Id = 0x0506;
-} // namespace MediaPlayback
+} // namespace MediaPlayback {
 namespace MediaInput {
 static constexpr ClusterId Id = 0x0507;
-} // namespace MediaInput
+} // namespace MediaInput {
 namespace LowPower {
 static constexpr ClusterId Id = 0x0508;
-} // namespace LowPower
+} // namespace LowPower {
 namespace KeypadInput {
 static constexpr ClusterId Id = 0x0509;
-} // namespace KeypadInput
+} // namespace KeypadInput {
 namespace ContentLauncher {
 static constexpr ClusterId Id = 0x050A;
-} // namespace ContentLauncher
+} // namespace ContentLauncher {
 namespace AudioOutput {
 static constexpr ClusterId Id = 0x050B;
-} // namespace AudioOutput
+} // namespace AudioOutput {
 namespace ApplicationLauncher {
 static constexpr ClusterId Id = 0x050C;
-} // namespace ApplicationLauncher
+} // namespace ApplicationLauncher {
 namespace ApplicationBasic {
 static constexpr ClusterId Id = 0x050D;
-} // namespace ApplicationBasic
+} // namespace ApplicationBasic {
 namespace AccountLogin {
 static constexpr ClusterId Id = 0x050E;
-} // namespace AccountLogin
+} // namespace AccountLogin {
 namespace TestCluster {
 static constexpr ClusterId Id = 0x050F;
-} // namespace TestCluster
+} // namespace TestCluster {
 namespace Messaging {
 static constexpr ClusterId Id = 0x0703;
-} // namespace Messaging
+} // namespace Messaging {
 namespace ApplianceIdentification {
 static constexpr ClusterId Id = 0x0B00;
-} // namespace ApplianceIdentification
+} // namespace ApplianceIdentification {
 namespace MeterIdentification {
 static constexpr ClusterId Id = 0x0B01;
-} // namespace MeterIdentification
+} // namespace MeterIdentification {
 namespace ApplianceEventsAndAlert {
 static constexpr ClusterId Id = 0x0B02;
-} // namespace ApplianceEventsAndAlert
+} // namespace ApplianceEventsAndAlert {
 namespace ApplianceStatistics {
 static constexpr ClusterId Id = 0x0B03;
-} // namespace ApplianceStatistics
+} // namespace ApplianceStatistics {
 namespace ElectricalMeasurement {
 static constexpr ClusterId Id = 0x0B04;
-} // namespace ElectricalMeasurement
+} // namespace ElectricalMeasurement {
 namespace Binding {
 static constexpr ClusterId Id = 0xF000;
-} // namespace Binding
+} // namespace Binding {
 namespace GroupKeyManagement {
 static constexpr ClusterId Id = 0xF004;
-} // namespace GroupKeyManagement
+} // namespace GroupKeyManagement {
 namespace SampleMfgSpecificCluster {
 static constexpr ClusterId Id = 0xFC00;
-} // namespace SampleMfgSpecificCluster
+} // namespace SampleMfgSpecificCluster {
 namespace SampleMfgSpecificCluster2 {
 static constexpr ClusterId Id = 0xFC00;
-} // namespace SampleMfgSpecificCluster2
+} // namespace SampleMfgSpecificCluster2 {
 
 } // namespace Clusters
 } // namespace app

@@ -247,6 +247,11 @@ class ChipClusters:
                     "transferFileDesignator": "bytes",
                 },
             },
+            "DoSomethingCluster": {
+                "DoSomething": {
+                    "data": "str",
+                },
+            },
             "DoorLock": {
                 "ClearAllPins": {
                 },
@@ -633,10 +638,6 @@ class ChipClusters:
                 "ViewScene": {
                     "groupId": "int",
                     "sceneId": "int",
-                },
-            },
-            "SoftwareDiagnostics": {
-                "ResetWatermarks": {
                 },
             },
             "Switch": {
@@ -1253,6 +1254,12 @@ class ChipClusters:
             },
             "DiagnosticLogs": {
             },
+            "DoSomethingCluster": {
+                "ClusterRevision": {
+                    "attributeId": 0xFFFD,
+                    "type": "int",
+                },
+            },
             "DoorLock": {
                 "LockState": {
                     "attributeId": 0x0000,
@@ -1651,16 +1658,6 @@ class ChipClusters:
                 },
                 "NameSupport": {
                     "attributeId": 0x0004,
-                    "type": "int",
-                },
-                "ClusterRevision": {
-                    "attributeId": 0xFFFD,
-                    "type": "int",
-                },
-            },
-            "SoftwareDiagnostics": {
-                "CurrentHeapHighWatermark": {
-                    "attributeId": 0x0003,
                     "type": "int",
                 },
                 "ClusterRevision": {
@@ -2413,6 +2410,11 @@ class ChipClusters:
         return self._chipLib.chip_ime_AppendCommand_DiagnosticLogs_RetrieveLogsRequest(
                 device, ZCLendpoint, ZCLgroupid, intent, requestedProtocol, transferFileDesignator, len(transferFileDesignator)
         )
+    def ClusterDoSomethingCluster_CommandDoSomething(self, device: ctypes.c_void_p, ZCLendpoint: int, ZCLgroupid: int, data: bytes):
+        data = data.encode("utf-8") + b'\x00'
+        return self._chipLib.chip_ime_AppendCommand_DoSomethingCluster_DoSomething(
+                device, ZCLendpoint, ZCLgroupid, data, len(data)
+        )
     def ClusterDoorLock_CommandClearAllPins(self, device: ctypes.c_void_p, ZCLendpoint: int, ZCLgroupid: int):
         return self._chipLib.chip_ime_AppendCommand_DoorLock_ClearAllPins(
                 device, ZCLendpoint, ZCLgroupid
@@ -2784,10 +2786,6 @@ class ChipClusters:
     def ClusterScenes_CommandViewScene(self, device: ctypes.c_void_p, ZCLendpoint: int, ZCLgroupid: int, groupId: int, sceneId: int):
         return self._chipLib.chip_ime_AppendCommand_Scenes_ViewScene(
                 device, ZCLendpoint, ZCLgroupid, groupId, sceneId
-        )
-    def ClusterSoftwareDiagnostics_CommandResetWatermarks(self, device: ctypes.c_void_p, ZCLendpoint: int, ZCLgroupid: int):
-        return self._chipLib.chip_ime_AppendCommand_SoftwareDiagnostics_ResetWatermarks(
-                device, ZCLendpoint, ZCLgroupid
         )
     def ClusterTvChannel_CommandChangeChannel(self, device: ctypes.c_void_p, ZCLendpoint: int, ZCLgroupid: int, match: bytes):
         match = match.encode("utf-8") + b'\x00'
@@ -3171,6 +3169,8 @@ class ChipClusters:
         return self._chipLib.chip_ime_ReadAttribute_Descriptor_PartsList(device, ZCLendpoint, ZCLgroupid)
     def ClusterDescriptor_ReadAttributeClusterRevision(self, device: ctypes.c_void_p, ZCLendpoint: int, ZCLgroupid: int):
         return self._chipLib.chip_ime_ReadAttribute_Descriptor_ClusterRevision(device, ZCLendpoint, ZCLgroupid)
+    def ClusterDoSomethingCluster_ReadAttributeClusterRevision(self, device: ctypes.c_void_p, ZCLendpoint: int, ZCLgroupid: int):
+        return self._chipLib.chip_ime_ReadAttribute_DoSomethingCluster_ClusterRevision(device, ZCLendpoint, ZCLgroupid)
     def ClusterDoorLock_ReadAttributeLockState(self, device: ctypes.c_void_p, ZCLendpoint: int, ZCLgroupid: int):
         return self._chipLib.chip_ime_ReadAttribute_DoorLock_LockState(device, ZCLendpoint, ZCLgroupid)
     def ClusterDoorLock_ConfigureAttributeLockState(self, device: ctypes.c_void_p, ZCLendpoint: int, minInterval: int, maxInterval: int, change: int):
@@ -3369,10 +3369,6 @@ class ChipClusters:
         return self._chipLib.chip_ime_ReadAttribute_Scenes_NameSupport(device, ZCLendpoint, ZCLgroupid)
     def ClusterScenes_ReadAttributeClusterRevision(self, device: ctypes.c_void_p, ZCLendpoint: int, ZCLgroupid: int):
         return self._chipLib.chip_ime_ReadAttribute_Scenes_ClusterRevision(device, ZCLendpoint, ZCLgroupid)
-    def ClusterSoftwareDiagnostics_ReadAttributeCurrentHeapHighWatermark(self, device: ctypes.c_void_p, ZCLendpoint: int, ZCLgroupid: int):
-        return self._chipLib.chip_ime_ReadAttribute_SoftwareDiagnostics_CurrentHeapHighWatermark(device, ZCLendpoint, ZCLgroupid)
-    def ClusterSoftwareDiagnostics_ReadAttributeClusterRevision(self, device: ctypes.c_void_p, ZCLendpoint: int, ZCLgroupid: int):
-        return self._chipLib.chip_ime_ReadAttribute_SoftwareDiagnostics_ClusterRevision(device, ZCLendpoint, ZCLgroupid)
     def ClusterSwitch_ReadAttributeNumberOfPositions(self, device: ctypes.c_void_p, ZCLendpoint: int, ZCLgroupid: int):
         return self._chipLib.chip_ime_ReadAttribute_Switch_NumberOfPositions(device, ZCLendpoint, ZCLgroupid)
     def ClusterSwitch_ReadAttributeCurrentPosition(self, device: ctypes.c_void_p, ZCLendpoint: int, ZCLgroupid: int):
@@ -4256,6 +4252,13 @@ class ChipClusters:
         # Cluster DiagnosticLogs Command RetrieveLogsRequest
         self._chipLib.chip_ime_AppendCommand_DiagnosticLogs_RetrieveLogsRequest.argtypes = [ctypes.c_void_p, ctypes.c_uint8, ctypes.c_uint16, ctypes.c_uint8, ctypes.c_uint8, ctypes.c_char_p, ctypes.c_uint32]
         self._chipLib.chip_ime_AppendCommand_DiagnosticLogs_RetrieveLogsRequest.restype = ctypes.c_uint32
+        # Cluster DoSomethingCluster
+        # Cluster DoSomethingCluster Command DoSomething
+        self._chipLib.chip_ime_AppendCommand_DoSomethingCluster_DoSomething.argtypes = [ctypes.c_void_p, ctypes.c_uint8, ctypes.c_uint16, ctypes.c_char_p, ctypes.c_uint32]
+        self._chipLib.chip_ime_AppendCommand_DoSomethingCluster_DoSomething.restype = ctypes.c_uint32
+        # Cluster DoSomethingCluster ReadAttribute ClusterRevision
+        self._chipLib.chip_ime_ReadAttribute_DoSomethingCluster_ClusterRevision.argtypes = [ctypes.c_void_p, ctypes.c_uint8, ctypes.c_uint16]
+        self._chipLib.chip_ime_ReadAttribute_DoSomethingCluster_ClusterRevision.restype = ctypes.c_uint32
         # Cluster DoorLock
         # Cluster DoorLock Command ClearAllPins
         self._chipLib.chip_ime_AppendCommand_DoorLock_ClearAllPins.argtypes = [ctypes.c_void_p, ctypes.c_uint8, ctypes.c_uint16]
@@ -4847,16 +4850,6 @@ class ChipClusters:
         # Cluster Scenes ReadAttribute ClusterRevision
         self._chipLib.chip_ime_ReadAttribute_Scenes_ClusterRevision.argtypes = [ctypes.c_void_p, ctypes.c_uint8, ctypes.c_uint16]
         self._chipLib.chip_ime_ReadAttribute_Scenes_ClusterRevision.restype = ctypes.c_uint32
-        # Cluster SoftwareDiagnostics
-        # Cluster SoftwareDiagnostics Command ResetWatermarks
-        self._chipLib.chip_ime_AppendCommand_SoftwareDiagnostics_ResetWatermarks.argtypes = [ctypes.c_void_p, ctypes.c_uint8, ctypes.c_uint16]
-        self._chipLib.chip_ime_AppendCommand_SoftwareDiagnostics_ResetWatermarks.restype = ctypes.c_uint32
-        # Cluster SoftwareDiagnostics ReadAttribute CurrentHeapHighWatermark
-        self._chipLib.chip_ime_ReadAttribute_SoftwareDiagnostics_CurrentHeapHighWatermark.argtypes = [ctypes.c_void_p, ctypes.c_uint8, ctypes.c_uint16]
-        self._chipLib.chip_ime_ReadAttribute_SoftwareDiagnostics_CurrentHeapHighWatermark.restype = ctypes.c_uint32
-        # Cluster SoftwareDiagnostics ReadAttribute ClusterRevision
-        self._chipLib.chip_ime_ReadAttribute_SoftwareDiagnostics_ClusterRevision.argtypes = [ctypes.c_void_p, ctypes.c_uint8, ctypes.c_uint16]
-        self._chipLib.chip_ime_ReadAttribute_SoftwareDiagnostics_ClusterRevision.restype = ctypes.c_uint32
         # Cluster Switch
         # Cluster Switch ReadAttribute NumberOfPositions
         self._chipLib.chip_ime_ReadAttribute_Switch_NumberOfPositions.argtypes = [ctypes.c_void_p, ctypes.c_uint8, ctypes.c_uint16]

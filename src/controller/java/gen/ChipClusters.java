@@ -740,6 +740,28 @@ public class ChipClusters {
         byte[] transferFileDesignator);
   }
 
+  public static class DoSomethingClusterCluster extends BaseChipCluster {
+    public DoSomethingClusterCluster(long devicePtr, int endpointId) {
+      super(devicePtr, endpointId);
+    }
+
+    @Override
+    public native long initWithDevice(long devicePtr, int endpointId);
+
+    public void doSomething(DoSomethingResponseCallback callback, String data) {
+      doSomething(chipClusterPtr, callback, data);
+    }
+
+    private native void doSomething(
+        long chipClusterPtr, DoSomethingResponseCallback callback, String data);
+
+    public interface DoSomethingResponseCallback {
+      void onSuccess(String data);
+
+      void onError(Exception error);
+    }
+  }
+
   public static class DoorLockCluster extends BaseChipCluster {
     public DoorLockCluster(long devicePtr, int endpointId) {
       super(devicePtr, endpointId);
@@ -2272,21 +2294,6 @@ public class ChipClusters {
 
       void onError(Exception error);
     }
-  }
-
-  public static class SoftwareDiagnosticsCluster extends BaseChipCluster {
-    public SoftwareDiagnosticsCluster(long devicePtr, int endpointId) {
-      super(devicePtr, endpointId);
-    }
-
-    @Override
-    public native long initWithDevice(long devicePtr, int endpointId);
-
-    public void resetWatermarks(DefaultClusterCallback callback) {
-      resetWatermarks(chipClusterPtr, callback);
-    }
-
-    private native void resetWatermarks(long chipClusterPtr, DefaultClusterCallback callback);
   }
 
   public static class SwitchCluster extends BaseChipCluster {

@@ -322,6 +322,12 @@
 #define ZCL_ACTIVE_RADIO_FAULTS_ATTRIBUTE_ID (0x0006)
 #define ZCL_ACTIVE_NETWORK_FAULTS_ATTRIBUTE_ID (0x0007)
 
+// Attribute ids for cluster: Do Something Cluster
+
+// Client attributes
+
+// Server attributes
+
 // Attribute ids for cluster: Software Diagnostics
 
 // Client attributes
@@ -1534,3 +1540,4 @@
 // Server attributes
 #define ZCL_ATTRIBUTE_THREE_ATTRIBUTE_ID (0x0000)
 #define ZCL_ATTRIBUTE_FOUR_ATTRIBUTE_ID (0x0001)
+

@@ -26,72 +26,73 @@ namespace Clusters {
 namespace Globals {
 namespace Attributes {
 namespace Ids {
-static constexpr AttributeId FeatureMap      = 0xFFFC;
+static constexpr AttributeId FeatureMap = 0xFFFC;
 static constexpr AttributeId ClusterRevision = 0xFFFD;
 } // namespace Ids
 } // namespace Attributes
 } // namespace Globals
 
+
 namespace PowerConfiguration {
 namespace Attributes {
 namespace Ids {
-static constexpr AttributeId MainsVoltage                   = 0x0000;
-static constexpr AttributeId MainsFrequency                 = 0x0001;
-static constexpr AttributeId MainsAlarmMask                 = 0x0010;
-static constexpr AttributeId MainsVoltageMinThreshold       = 0x0011;
-static constexpr AttributeId MainsVoltageMaxThreshold       = 0x0012;
-static constexpr AttributeId MainsVoltageDwellTrip          = 0x0013;
-static constexpr AttributeId BatteryVoltage                 = 0x0020;
-static constexpr AttributeId BatteryPercentageRemaining     = 0x0021;
-static constexpr AttributeId BatteryManufacturer            = 0x0030;
-static constexpr AttributeId BatterySize                    = 0x0031;
-static constexpr AttributeId BatteryAhrRating               = 0x0032;
-static constexpr AttributeId BatteryQuantity                = 0x0033;
-static constexpr AttributeId BatteryRatedVoltage            = 0x0034;
-static constexpr AttributeId BatteryAlarmMask               = 0x0035;
-static constexpr AttributeId BatteryVoltageMinThreshold     = 0x0036;
-static constexpr AttributeId BatteryVoltageThreshold1       = 0x0037;
-static constexpr AttributeId BatteryVoltageThreshold2       = 0x0038;
-static constexpr AttributeId BatteryVoltageThreshold3       = 0x0039;
-static constexpr AttributeId BatteryPercentageMinThreshold  = 0x003A;
-static constexpr AttributeId BatteryPercentageThreshold1    = 0x003B;
-static constexpr AttributeId BatteryPercentageThreshold2    = 0x003C;
-static constexpr AttributeId BatteryPercentageThreshold3    = 0x003D;
-static constexpr AttributeId BatteryAlarmState              = 0x003E;
-static constexpr AttributeId Battery2Voltage                = 0x0040;
-static constexpr AttributeId Battery2PercentageRemaining    = 0x0041;
-static constexpr AttributeId Battery2Manufacturer           = 0x0050;
-static constexpr AttributeId Battery2Size                   = 0x0051;
-static constexpr AttributeId Battery2AhrRating              = 0x0052;
-static constexpr AttributeId Battery2Quantity               = 0x0053;
-static constexpr AttributeId Battery2RatedVoltage           = 0x0054;
-static constexpr AttributeId Battery2AlarmMask              = 0x0055;
-static constexpr AttributeId Battery2VoltageMinThreshold    = 0x0056;
-static constexpr AttributeId Battery2VoltageThreshold1      = 0x0057;
-static constexpr AttributeId Battery2VoltageThreshold2      = 0x0058;
-static constexpr AttributeId Battery2VoltageThreshold3      = 0x0059;
+static constexpr AttributeId MainsVoltage = 0x0000;
+static constexpr AttributeId MainsFrequency = 0x0001;
+static constexpr AttributeId MainsAlarmMask = 0x0010;
+static constexpr AttributeId MainsVoltageMinThreshold = 0x0011;
+static constexpr AttributeId MainsVoltageMaxThreshold = 0x0012;
+static constexpr AttributeId MainsVoltageDwellTrip = 0x0013;
+static constexpr AttributeId BatteryVoltage = 0x0020;
+static constexpr AttributeId BatteryPercentageRemaining = 0x0021;
+static constexpr AttributeId BatteryManufacturer = 0x0030;
+static constexpr AttributeId BatterySize = 0x0031;
+static constexpr AttributeId BatteryAhrRating = 0x0032;
+static constexpr AttributeId BatteryQuantity = 0x0033;
+static constexpr AttributeId BatteryRatedVoltage = 0x0034;
+static constexpr AttributeId BatteryAlarmMask = 0x0035;
+static constexpr AttributeId BatteryVoltageMinThreshold = 0x0036;
+static constexpr AttributeId BatteryVoltageThreshold1 = 0x0037;
+static constexpr AttributeId BatteryVoltageThreshold2 = 0x0038;
+static constexpr AttributeId BatteryVoltageThreshold3 = 0x0039;
+static constexpr AttributeId BatteryPercentageMinThreshold = 0x003A;
+static constexpr AttributeId BatteryPercentageThreshold1 = 0x003B;
+static constexpr AttributeId BatteryPercentageThreshold2 = 0x003C;
+static constexpr AttributeId BatteryPercentageThreshold3 = 0x003D;
+static constexpr AttributeId BatteryAlarmState = 0x003E;
+static constexpr AttributeId Battery2Voltage = 0x0040;
+static constexpr AttributeId Battery2PercentageRemaining = 0x0041;
+static constexpr AttributeId Battery2Manufacturer = 0x0050;
+static constexpr AttributeId Battery2Size = 0x0051;
+static constexpr AttributeId Battery2AhrRating = 0x0052;
+static constexpr AttributeId Battery2Quantity = 0x0053;
+static constexpr AttributeId Battery2RatedVoltage = 0x0054;
+static constexpr AttributeId Battery2AlarmMask = 0x0055;
+static constexpr AttributeId Battery2VoltageMinThreshold = 0x0056;
+static constexpr AttributeId Battery2VoltageThreshold1 = 0x0057;
+static constexpr AttributeId Battery2VoltageThreshold2 = 0x0058;
+static constexpr AttributeId Battery2VoltageThreshold3 = 0x0059;
 static constexpr AttributeId Battery2PercentageMinThreshold = 0x005A;
-static constexpr AttributeId Battery2PercentageThreshold1   = 0x005B;
-static constexpr AttributeId Battery2PercentageThreshold2   = 0x005C;
-static constexpr AttributeId Battery2PercentageThreshold3   = 0x005D;
-static constexpr AttributeId Battery2AlarmState             = 0x005E;
-static constexpr AttributeId Battery3Voltage                = 0x0060;
-static constexpr AttributeId Battery3PercentageRemaining    = 0x0061;
-static constexpr AttributeId Battery3Manufacturer           = 0x0070;
-static constexpr AttributeId Battery3Size                   = 0x0071;
-static constexpr AttributeId Battery3AhrRating              = 0x0072;
-static constexpr AttributeId Battery3Quantity               = 0x0073;
-static constexpr AttributeId Battery3RatedVoltage           = 0x0074;
-static constexpr AttributeId Battery3AlarmMask              = 0x0075;
-static constexpr AttributeId Battery3VoltageMinThreshold    = 0x0076;
-static constexpr AttributeId Battery3VoltageThreshold1      = 0x0077;
-static constexpr AttributeId Battery3VoltageThreshold2      = 0x0078;
-static constexpr AttributeId Battery3VoltageThreshold3      = 0x0079;
+static constexpr AttributeId Battery2PercentageThreshold1 = 0x005B;
+static constexpr AttributeId Battery2PercentageThreshold2 = 0x005C;
+static constexpr AttributeId Battery2PercentageThreshold3 = 0x005D;
+static constexpr AttributeId Battery2AlarmState = 0x005E;
+static constexpr AttributeId Battery3Voltage = 0x0060;
+static constexpr AttributeId Battery3PercentageRemaining = 0x0061;
+static constexpr AttributeId Battery3Manufacturer = 0x0070;
+static constexpr AttributeId Battery3Size = 0x0071;
+static constexpr AttributeId Battery3AhrRating = 0x0072;
+static constexpr AttributeId Battery3Quantity = 0x0073;
+static constexpr AttributeId Battery3RatedVoltage = 0x0074;
+static constexpr AttributeId Battery3AlarmMask = 0x0075;
+static constexpr AttributeId Battery3VoltageMinThreshold = 0x0076;
+static constexpr AttributeId Battery3VoltageThreshold1 = 0x0077;
+static constexpr AttributeId Battery3VoltageThreshold2 = 0x0078;
+static constexpr AttributeId Battery3VoltageThreshold3 = 0x0079;
 static constexpr AttributeId Battery3PercentageMinThreshold = 0x007A;
-static constexpr AttributeId Battery3PercentageThreshold1   = 0x007B;
-static constexpr AttributeId Battery3PercentageThreshold2   = 0x007C;
-static constexpr AttributeId Battery3PercentageThreshold3   = 0x007D;
-static constexpr AttributeId Battery3AlarmState             = 0x007E;
+static constexpr AttributeId Battery3PercentageThreshold1 = 0x007B;
+static constexpr AttributeId Battery3PercentageThreshold2 = 0x007C;
+static constexpr AttributeId Battery3PercentageThreshold3 = 0x007D;
+static constexpr AttributeId Battery3AlarmState = 0x007E;
 } // namespace Ids
 } // namespace Attributes
 } // namespace PowerConfiguration
@@ -99,14 +100,14 @@ static constexpr AttributeId Battery3AlarmState             = 0x007E;
 namespace DeviceTemperatureConfiguration {
 namespace Attributes {
 namespace Ids {
-static constexpr AttributeId CurrentTemperature     = 0x0000;
-static constexpr AttributeId MinTempExperienced     = 0x0001;
-static constexpr AttributeId MaxTempExperienced     = 0x0002;
-static constexpr AttributeId OverTempTotalDwell     = 0x0003;
-static constexpr AttributeId DeviceTempAlarmMask    = 0x0010;
-static constexpr AttributeId LowTempThreshold       = 0x0011;
-static constexpr AttributeId HighTempThreshold      = 0x0012;
-static constexpr AttributeId LowTempDwellTripPoint  = 0x0013;
+static constexpr AttributeId CurrentTemperature = 0x0000;
+static constexpr AttributeId MinTempExperienced = 0x0001;
+static constexpr AttributeId MaxTempExperienced = 0x0002;
+static constexpr AttributeId OverTempTotalDwell = 0x0003;
+static constexpr AttributeId DeviceTempAlarmMask = 0x0010;
+static constexpr AttributeId LowTempThreshold = 0x0011;
+static constexpr AttributeId HighTempThreshold = 0x0012;
+static constexpr AttributeId LowTempDwellTripPoint = 0x0013;
 static constexpr AttributeId HighTempDwellTripPoint = 0x0014;
 } // namespace Ids
 } // namespace Attributes
@@ -115,7 +116,7 @@ static constexpr AttributeId HighTempDwellTripPoint = 0x0014;
 namespace Identify {
 namespace Attributes {
 namespace Ids {
-static constexpr AttributeId IdentifyTime    = 0x0000;
+static constexpr AttributeId IdentifyTime = 0x0000;
 static constexpr AttributeId CommissionState = 0x0001;
 } // namespace Ids
 } // namespace Attributes
@@ -132,11 +133,11 @@ static constexpr AttributeId NameSupport = 0x0000;
 namespace Scenes {
 namespace Attributes {
 namespace Ids {
-static constexpr AttributeId SceneCount       = 0x0000;
-static constexpr AttributeId CurrentScene     = 0x0001;
-static constexpr AttributeId CurrentGroup     = 0x0002;
-static constexpr AttributeId SceneValid       = 0x0003;
-static constexpr AttributeId NameSupport      = 0x0004;
+static constexpr AttributeId SceneCount = 0x0000;
+static constexpr AttributeId CurrentScene = 0x0001;
+static constexpr AttributeId CurrentGroup = 0x0002;
+static constexpr AttributeId SceneValid = 0x0003;
+static constexpr AttributeId NameSupport = 0x0004;
 static constexpr AttributeId LastConfiguredBy = 0x0005;
 } // namespace Ids
 } // namespace Attributes
@@ -145,15 +146,15 @@ static constexpr AttributeId LastConfiguredBy = 0x0005;
 namespace OnOff {
 namespace Attributes {
 namespace Ids {
-static constexpr AttributeId OnOff                                  = 0x0000;
+static constexpr AttributeId OnOff = 0x0000;
 static constexpr AttributeId SampleMfgSpecificAttribute0x00000x1002 = 0x0000;
 static constexpr AttributeId SampleMfgSpecificAttribute0x00000x1049 = 0x0000;
 static constexpr AttributeId SampleMfgSpecificAttribute0x00010x1002 = 0x0001;
 static constexpr AttributeId SampleMfgSpecificAttribute0x00010x1040 = 0x0001;
-static constexpr AttributeId GlobalSceneControl                     = 0x4000;
-static constexpr AttributeId OnTime                                 = 0x4001;
-static constexpr AttributeId OffWaitTime                            = 0x4002;
-static constexpr AttributeId StartUpOnOff                           = 0x4003;
+static constexpr AttributeId GlobalSceneControl = 0x4000;
+static constexpr AttributeId OnTime = 0x4001;
+static constexpr AttributeId OffWaitTime = 0x4002;
+static constexpr AttributeId StartUpOnOff = 0x4003;
 } // namespace Ids
 } // namespace Attributes
 } // namespace OnOff
@@ -161,7 +162,7 @@ static constexpr AttributeId StartUpOnOff                           = 0x4003;
 namespace OnOffSwitchConfiguration {
 namespace Attributes {
 namespace Ids {
-static constexpr AttributeId SwitchType    = 0x0000;
+static constexpr AttributeId SwitchType = 0x0000;
 static constexpr AttributeId SwitchActions = 0x0010;
 } // namespace Ids
 } // namespace Attributes
@@ -170,14 +171,14 @@ static constexpr AttributeId SwitchActions = 0x0010;
 namespace LevelControl {
 namespace Attributes {
 namespace Ids {
-static constexpr AttributeId CurrentLevel        = 0x0000;
-static constexpr AttributeId RemainingTime       = 0x0001;
-static constexpr AttributeId Options             = 0x000F;
+static constexpr AttributeId CurrentLevel = 0x0000;
+static constexpr AttributeId RemainingTime = 0x0001;
+static constexpr AttributeId Options = 0x000F;
 static constexpr AttributeId OnOffTransitionTime = 0x0010;
-static constexpr AttributeId OnLevel             = 0x0011;
-static constexpr AttributeId OnTransitionTime    = 0x0012;
-static constexpr AttributeId OffTransitionTime   = 0x0013;
-static constexpr AttributeId DefaultMoveRate     = 0x0014;
+static constexpr AttributeId OnLevel = 0x0011;
+static constexpr AttributeId OnTransitionTime = 0x0012;
+static constexpr AttributeId OffTransitionTime = 0x0013;
+static constexpr AttributeId DefaultMoveRate = 0x0014;
 static constexpr AttributeId StartUpCurrentLevel = 0x4000;
 } // namespace Ids
 } // namespace Attributes
@@ -194,15 +195,15 @@ static constexpr AttributeId AlarmCount = 0x0000;
 namespace Time {
 namespace Attributes {
 namespace Ids {
-static constexpr AttributeId Time           = 0x0000;
-static constexpr AttributeId TimeStatus     = 0x0001;
-static constexpr AttributeId TimeZone       = 0x0002;
-static constexpr AttributeId DstStart       = 0x0003;
-static constexpr AttributeId DstEnd         = 0x0004;
-static constexpr AttributeId DstShift       = 0x0005;
-static constexpr AttributeId StandardTime   = 0x0006;
-static constexpr AttributeId LocalTime      = 0x0007;
-static constexpr AttributeId LastSetTime    = 0x0008;
+static constexpr AttributeId Time = 0x0000;
+static constexpr AttributeId TimeStatus = 0x0001;
+static constexpr AttributeId TimeZone = 0x0002;
+static constexpr AttributeId DstStart = 0x0003;
+static constexpr AttributeId DstEnd = 0x0004;
+static constexpr AttributeId DstShift = 0x0005;
+static constexpr AttributeId StandardTime = 0x0006;
+static constexpr AttributeId LocalTime = 0x0007;
+static constexpr AttributeId LastSetTime = 0x0008;
 static constexpr AttributeId ValidUntilTime = 0x0009;
 } // namespace Ids
 } // namespace Attributes
@@ -211,14 +212,14 @@ static constexpr AttributeId ValidUntilTime = 0x0009;
 namespace BinaryInputBasic {
 namespace Attributes {
 namespace Ids {
-static constexpr AttributeId ActiveText      = 0x0004;
-static constexpr AttributeId Description     = 0x001C;
-static constexpr AttributeId InactiveText    = 0x002E;
-static constexpr AttributeId OutOfService    = 0x0051;
-static constexpr AttributeId Polarity        = 0x0054;
-static constexpr AttributeId PresentValue    = 0x0055;
-static constexpr AttributeId Reliability     = 0x0067;
-static constexpr AttributeId StatusFlags     = 0x006F;
+static constexpr AttributeId ActiveText = 0x0004;
+static constexpr AttributeId Description = 0x001C;
+static constexpr AttributeId InactiveText = 0x002E;
+static constexpr AttributeId OutOfService = 0x0051;
+static constexpr AttributeId Polarity = 0x0054;
+static constexpr AttributeId PresentValue = 0x0055;
+static constexpr AttributeId Reliability = 0x0067;
+static constexpr AttributeId StatusFlags = 0x006F;
 static constexpr AttributeId ApplicationType = 0x0100;
 } // namespace Ids
 } // namespace Attributes
@@ -227,11 +228,11 @@ static constexpr AttributeId ApplicationType = 0x0100;
 namespace PowerProfile {
 namespace Attributes {
 namespace Ids {
-static constexpr AttributeId TotalProfileNum    = 0x0000;
+static constexpr AttributeId TotalProfileNum = 0x0000;
 static constexpr AttributeId MultipleScheduling = 0x0001;
-static constexpr AttributeId EnergyFormatting   = 0x0002;
-static constexpr AttributeId EnergyRemote       = 0x0003;
-static constexpr AttributeId ScheduleMode       = 0x0004;
+static constexpr AttributeId EnergyFormatting = 0x0002;
+static constexpr AttributeId EnergyRemote = 0x0003;
+static constexpr AttributeId ScheduleMode = 0x0004;
 } // namespace Ids
 } // namespace Attributes
 } // namespace PowerProfile
@@ -239,8 +240,8 @@ static constexpr AttributeId ScheduleMode       = 0x0004;
 namespace ApplianceControl {
 namespace Attributes {
 namespace Ids {
-static constexpr AttributeId StartTime     = 0x0000;
-static constexpr AttributeId FinishTime    = 0x0001;
+static constexpr AttributeId StartTime = 0x0000;
+static constexpr AttributeId FinishTime = 0x0001;
 static constexpr AttributeId RemainingTime = 0x0002;
 } // namespace Ids
 } // namespace Attributes
@@ -252,7 +253,7 @@ namespace Ids {
 static constexpr AttributeId DeviceList = 0x0000;
 static constexpr AttributeId ServerList = 0x0001;
 static constexpr AttributeId ClientList = 0x0002;
-static constexpr AttributeId PartsList  = 0x0003;
+static constexpr AttributeId PartsList = 0x0003;
 } // namespace Ids
 } // namespace Attributes
 } // namespace Descriptor
@@ -260,13 +261,13 @@ static constexpr AttributeId PartsList  = 0x0003;
 namespace PollControl {
 namespace Attributes {
 namespace Ids {
-static constexpr AttributeId CheckInInterval     = 0x0000;
-static constexpr AttributeId LongPollInterval    = 0x0001;
-static constexpr AttributeId ShortPollInterval   = 0x0002;
-static constexpr AttributeId FastPollTimeout     = 0x0003;
-static constexpr AttributeId CheckInIntervalMin  = 0x0004;
+static constexpr AttributeId CheckInInterval = 0x0000;
+static constexpr AttributeId LongPollInterval = 0x0001;
+static constexpr AttributeId ShortPollInterval = 0x0002;
+static constexpr AttributeId FastPollTimeout = 0x0003;
+static constexpr AttributeId CheckInIntervalMin = 0x0004;
 static constexpr AttributeId LongPollIntervalMin = 0x0005;
-static constexpr AttributeId FastPollTimeoutMax  = 0x0006;
+static constexpr AttributeId FastPollTimeoutMax = 0x0006;
 } // namespace Ids
 } // namespace Attributes
 } // namespace PollControl
@@ -275,23 +276,23 @@ namespace Basic {
 namespace Attributes {
 namespace Ids {
 static constexpr AttributeId InteractionModelVersion = 0x0000;
-static constexpr AttributeId VendorName              = 0x0001;
-static constexpr AttributeId VendorID                = 0x0002;
-static constexpr AttributeId ProductName             = 0x0003;
-static constexpr AttributeId ProductID               = 0x0004;
-static constexpr AttributeId UserLabel               = 0x0005;
-static constexpr AttributeId Location                = 0x0006;
-static constexpr AttributeId HardwareVersion         = 0x0007;
-static constexpr AttributeId HardwareVersionString   = 0x0008;
-static constexpr AttributeId SoftwareVersion         = 0x0009;
-static constexpr AttributeId SoftwareVersionString   = 0x000A;
-static constexpr AttributeId ManufacturingDate       = 0x000B;
-static constexpr AttributeId PartNumber              = 0x000C;
-static constexpr AttributeId ProductURL              = 0x000D;
-static constexpr AttributeId ProductLabel            = 0x000E;
-static constexpr AttributeId SerialNumber            = 0x000F;
-static constexpr AttributeId LocalConfigDisabled     = 0x0010;
-static constexpr AttributeId Reachable               = 0x0011;
+static constexpr AttributeId VendorName = 0x0001;
+static constexpr AttributeId VendorID = 0x0002;
+static constexpr AttributeId ProductName = 0x0003;
+static constexpr AttributeId ProductID = 0x0004;
+static constexpr AttributeId UserLabel = 0x0005;
+static constexpr AttributeId Location = 0x0006;
+static constexpr AttributeId HardwareVersion = 0x0007;
+static constexpr AttributeId HardwareVersionString = 0x0008;
+static constexpr AttributeId SoftwareVersion = 0x0009;
+static constexpr AttributeId SoftwareVersionString = 0x000A;
+static constexpr AttributeId ManufacturingDate = 0x000B;
+static constexpr AttributeId PartNumber = 0x000C;
+static constexpr AttributeId ProductURL = 0x000D;
+static constexpr AttributeId ProductLabel = 0x000E;
+static constexpr AttributeId SerialNumber = 0x000F;
+static constexpr AttributeId LocalConfigDisabled = 0x0010;
+static constexpr AttributeId Reachable = 0x0011;
 } // namespace Ids
 } // namespace Attributes
 } // namespace Basic
@@ -299,7 +300,7 @@ static constexpr AttributeId Reachable               = 0x0011;
 namespace GeneralCommissioning {
 namespace Attributes {
 namespace Ids {
-static constexpr AttributeId FabricId   = 0x0000;
+static constexpr AttributeId FabricId = 0x0000;
 static constexpr AttributeId Breadcrumb = 0x0001;
 } // namespace Ids
 } // namespace Attributes
@@ -308,14 +309,14 @@ static constexpr AttributeId Breadcrumb = 0x0001;
 namespace GeneralDiagnostics {
 namespace Attributes {
 namespace Ids {
-static constexpr AttributeId NetworkInterfaces     = 0x0000;
-static constexpr AttributeId RebootCount           = 0x0001;
-static constexpr AttributeId UpTime                = 0x0002;
+static constexpr AttributeId NetworkInterfaces = 0x0000;
+static constexpr AttributeId RebootCount = 0x0001;
+static constexpr AttributeId UpTime = 0x0002;
 static constexpr AttributeId TotalOperationalHours = 0x0003;
-static constexpr AttributeId BootReasons           = 0x0004;
-static constexpr AttributeId ActiveHardwareFaults  = 0x0005;
-static constexpr AttributeId ActiveRadioFaults     = 0x0006;
-static constexpr AttributeId ActiveNetworkFaults   = 0x0007;
+static constexpr AttributeId BootReasons = 0x0004;
+static constexpr AttributeId ActiveHardwareFaults = 0x0005;
+static constexpr AttributeId ActiveRadioFaults = 0x0006;
+static constexpr AttributeId ActiveNetworkFaults = 0x0007;
 } // namespace Ids
 } // namespace Attributes
 } // namespace GeneralDiagnostics
@@ -323,9 +324,9 @@ static constexpr AttributeId ActiveNetworkFaults   = 0x0007;
 namespace SoftwareDiagnostics {
 namespace Attributes {
 namespace Ids {
-static constexpr AttributeId ThreadMetrics            = 0x0000;
-static constexpr AttributeId CurrentHeapFree          = 0x0001;
-static constexpr AttributeId CurrentHeapUsed          = 0x0002;
+static constexpr AttributeId ThreadMetrics = 0x0000;
+static constexpr AttributeId CurrentHeapFree = 0x0001;
+static constexpr AttributeId CurrentHeapUsed = 0x0002;
 static constexpr AttributeId CurrentHeapHighWatermark = 0x0003;
 } // namespace Ids
 } // namespace Attributes
@@ -334,69 +335,69 @@ static constexpr AttributeId CurrentHeapHighWatermark = 0x0003;
 namespace ThreadNetworkDiagnostics {
 namespace Attributes {
 namespace Ids {
-static constexpr AttributeId Channel                           = 0x0000;
-static constexpr AttributeId RoutingRole                       = 0x0001;
-static constexpr AttributeId NetworkName                       = 0x0002;
-static constexpr AttributeId PanId                             = 0x0003;
-static constexpr AttributeId ExtendedPanId                     = 0x0004;
-static constexpr AttributeId MeshLocalPrefix                   = 0x0005;
-static constexpr AttributeId OverrunCount                      = 0x0006;
-static constexpr AttributeId NeighborTableList                 = 0x0007;
-static constexpr AttributeId RouteTableList                    = 0x0008;
-static constexpr AttributeId PartitionId                       = 0x0009;
-static constexpr AttributeId Weighting                         = 0x000A;
-static constexpr AttributeId DataVersion                       = 0x000B;
-static constexpr AttributeId StableDataVersion                 = 0x000C;
-static constexpr AttributeId LeaderRouterId                    = 0x000D;
-static constexpr AttributeId DetachedRoleCount                 = 0x000E;
-static constexpr AttributeId ChildRoleCount                    = 0x000F;
-static constexpr AttributeId RouterRoleCount                   = 0x0010;
-static constexpr AttributeId LeaderRoleCount                   = 0x0011;
-static constexpr AttributeId AttachAttemptCount                = 0x0012;
-static constexpr AttributeId PartitionIdChangeCount            = 0x0013;
+static constexpr AttributeId Channel = 0x0000;
+static constexpr AttributeId RoutingRole = 0x0001;
+static constexpr AttributeId NetworkName = 0x0002;
+static constexpr AttributeId PanId = 0x0003;
+static constexpr AttributeId ExtendedPanId = 0x0004;
+static constexpr AttributeId MeshLocalPrefix = 0x0005;
+static constexpr AttributeId OverrunCount = 0x0006;
+static constexpr AttributeId NeighborTableList = 0x0007;
+static constexpr AttributeId RouteTableList = 0x0008;
+static constexpr AttributeId PartitionId = 0x0009;
+static constexpr AttributeId Weighting = 0x000A;
+static constexpr AttributeId DataVersion = 0x000B;
+static constexpr AttributeId StableDataVersion = 0x000C;
+static constexpr AttributeId LeaderRouterId = 0x000D;
+static constexpr AttributeId DetachedRoleCount = 0x000E;
+static constexpr AttributeId ChildRoleCount = 0x000F;
+static constexpr AttributeId RouterRoleCount = 0x0010;
+static constexpr AttributeId LeaderRoleCount = 0x0011;
+static constexpr AttributeId AttachAttemptCount = 0x0012;
+static constexpr AttributeId PartitionIdChangeCount = 0x0013;
 static constexpr AttributeId BetterPartitionAttachAttemptCount = 0x0014;
-static constexpr AttributeId ParentChangeCount                 = 0x0015;
-static constexpr AttributeId TxTotalCount                      = 0x0016;
-static constexpr AttributeId TxUnicastCount                    = 0x0017;
-static constexpr AttributeId TxBroadcastCount                  = 0x0018;
-static constexpr AttributeId TxAckRequestedCount               = 0x0019;
-static constexpr AttributeId TxAckedCount                      = 0x001A;
-static constexpr AttributeId TxNoAckRequestedCount             = 0x001B;
-static constexpr AttributeId TxDataCount                       = 0x001C;
-static constexpr AttributeId TxDataPollCount                   = 0x001D;
-static constexpr AttributeId TxBeaconCount                     = 0x001E;
-static constexpr AttributeId TxBeaconRequestCount              = 0x001F;
-static constexpr AttributeId TxOtherCount                      = 0x0020;
-static constexpr AttributeId TxRetryCount                      = 0x0021;
-static constexpr AttributeId TxDirectMaxRetryExpiryCount       = 0x0022;
-static constexpr AttributeId TxIndirectMaxRetryExpiryCount     = 0x0023;
-static constexpr AttributeId TxErrCcaCount                     = 0x0024;
-static constexpr AttributeId TxErrAbortCount                   = 0x0025;
-static constexpr AttributeId TxErrBusyChannelCount             = 0x0026;
-static constexpr AttributeId RxTotalCount                      = 0x0027;
-static constexpr AttributeId RxUnicastCount                    = 0x0028;
-static constexpr AttributeId RxBroadcastCount                  = 0x0029;
-static constexpr AttributeId RxDataCount                       = 0x002A;
-static constexpr AttributeId RxDataPollCount                   = 0x002B;
-static constexpr AttributeId RxBeaconCount                     = 0x002C;
-static constexpr AttributeId RxBeaconRequestCount              = 0x002D;
-static constexpr AttributeId RxOtherCount                      = 0x002E;
-static constexpr AttributeId RxAddressFilteredCount            = 0x002F;
-static constexpr AttributeId RxDestAddrFilteredCount           = 0x0030;
-static constexpr AttributeId RxDuplicatedCount                 = 0x0031;
-static constexpr AttributeId RxErrNoFrameCount                 = 0x0032;
-static constexpr AttributeId RxErrUnknownNeighborCount         = 0x0033;
-static constexpr AttributeId RxErrInvalidSrcAddrCount          = 0x0034;
-static constexpr AttributeId RxErrSecCount                     = 0x0035;
-static constexpr AttributeId RxErrFcsCount                     = 0x0036;
-static constexpr AttributeId RxErrOtherCount                   = 0x0037;
-static constexpr AttributeId ActiveTimestamp                   = 0x0038;
-static constexpr AttributeId PendingTimestamp                  = 0x0039;
-static constexpr AttributeId Delay                             = 0x003A;
-static constexpr AttributeId SecurityPolicy                    = 0x003B;
-static constexpr AttributeId ChannelMask                       = 0x003C;
-static constexpr AttributeId OperationalDatasetComponents      = 0x003D;
-static constexpr AttributeId ActiveNetworkFaultsList           = 0x003E;
+static constexpr AttributeId ParentChangeCount = 0x0015;
+static constexpr AttributeId TxTotalCount = 0x0016;
+static constexpr AttributeId TxUnicastCount = 0x0017;
+static constexpr AttributeId TxBroadcastCount = 0x0018;
+static constexpr AttributeId TxAckRequestedCount = 0x0019;
+static constexpr AttributeId TxAckedCount = 0x001A;
+static constexpr AttributeId TxNoAckRequestedCount = 0x001B;
+static constexpr AttributeId TxDataCount = 0x001C;
+static constexpr AttributeId TxDataPollCount = 0x001D;
+static constexpr AttributeId TxBeaconCount = 0x001E;
+static constexpr AttributeId TxBeaconRequestCount = 0x001F;
+static constexpr AttributeId TxOtherCount = 0x0020;
+static constexpr AttributeId TxRetryCount = 0x0021;
+static constexpr AttributeId TxDirectMaxRetryExpiryCount = 0x0022;
+static constexpr AttributeId TxIndirectMaxRetryExpiryCount = 0x0023;
+static constexpr AttributeId TxErrCcaCount = 0x0024;
+static constexpr AttributeId TxErrAbortCount = 0x0025;
+static constexpr AttributeId TxErrBusyChannelCount = 0x0026;
+static constexpr AttributeId RxTotalCount = 0x0027;
+static constexpr AttributeId RxUnicastCount = 0x0028;
+static constexpr AttributeId RxBroadcastCount = 0x0029;
+static constexpr AttributeId RxDataCount = 0x002A;
+static constexpr AttributeId RxDataPollCount = 0x002B;
+static constexpr AttributeId RxBeaconCount = 0x002C;
+static constexpr AttributeId RxBeaconRequestCount = 0x002D;
+static constexpr AttributeId RxOtherCount = 0x002E;
+static constexpr AttributeId RxAddressFilteredCount = 0x002F;
+static constexpr AttributeId RxDestAddrFilteredCount = 0x0030;
+static constexpr AttributeId RxDuplicatedCount = 0x0031;
+static constexpr AttributeId RxErrNoFrameCount = 0x0032;
+static constexpr AttributeId RxErrUnknownNeighborCount = 0x0033;
+static constexpr AttributeId RxErrInvalidSrcAddrCount = 0x0034;
+static constexpr AttributeId RxErrSecCount = 0x0035;
+static constexpr AttributeId RxErrFcsCount = 0x0036;
+static constexpr AttributeId RxErrOtherCount = 0x0037;
+static constexpr AttributeId ActiveTimestamp = 0x0038;
+static constexpr AttributeId PendingTimestamp = 0x0039;
+static constexpr AttributeId Delay = 0x003A;
+static constexpr AttributeId SecurityPolicy = 0x003B;
+static constexpr AttributeId ChannelMask = 0x003C;
+static constexpr AttributeId OperationalDatasetComponents = 0x003D;
+static constexpr AttributeId ActiveNetworkFaultsList = 0x003E;
 } // namespace Ids
 } // namespace Attributes
 } // namespace ThreadNetworkDiagnostics
@@ -404,19 +405,19 @@ static constexpr AttributeId ActiveNetworkFaultsList           = 0x003E;
 namespace WiFiNetworkDiagnostics {
 namespace Attributes {
 namespace Ids {
-static constexpr AttributeId Bssid                  = 0x0000;
-static constexpr AttributeId SecurityType           = 0x0001;
-static constexpr AttributeId WiFiVersion            = 0x0002;
-static constexpr AttributeId ChannelNumber          = 0x0003;
-static constexpr AttributeId Rssi                   = 0x0004;
-static constexpr AttributeId BeaconLostCount        = 0x0005;
-static constexpr AttributeId BeaconRxCount          = 0x0006;
+static constexpr AttributeId Bssid = 0x0000;
+static constexpr AttributeId SecurityType = 0x0001;
+static constexpr AttributeId WiFiVersion = 0x0002;
+static constexpr AttributeId ChannelNumber = 0x0003;
+static constexpr AttributeId Rssi = 0x0004;
+static constexpr AttributeId BeaconLostCount = 0x0005;
+static constexpr AttributeId BeaconRxCount = 0x0006;
 static constexpr AttributeId PacketMulticastRxCount = 0x0007;
 static constexpr AttributeId PacketMulticastTxCount = 0x0008;
-static constexpr AttributeId PacketUnicastRxCount   = 0x0009;
-static constexpr AttributeId PacketUnicastTxCount   = 0x000A;
-static constexpr AttributeId CurrentMaxRate         = 0x000B;
-static constexpr AttributeId OverrunCount           = 0x000C;
+static constexpr AttributeId PacketUnicastRxCount = 0x0009;
+static constexpr AttributeId PacketUnicastTxCount = 0x000A;
+static constexpr AttributeId CurrentMaxRate = 0x000B;
+static constexpr AttributeId OverrunCount = 0x000C;
 } // namespace Ids
 } // namespace Attributes
 } // namespace WiFiNetworkDiagnostics
@@ -424,14 +425,14 @@ static constexpr AttributeId OverrunCount           = 0x000C;
 namespace EthernetNetworkDiagnostics {
 namespace Attributes {
 namespace Ids {
-static constexpr AttributeId PHYRate        = 0x0000;
-static constexpr AttributeId FullDuplex     = 0x0001;
-static constexpr AttributeId PacketRxCount  = 0x0002;
-static constexpr AttributeId PacketTxCount  = 0x0003;
-static constexpr AttributeId TxErrCount     = 0x0004;
+static constexpr AttributeId PHYRate = 0x0000;
+static constexpr AttributeId FullDuplex = 0x0001;
+static constexpr AttributeId PacketRxCount = 0x0002;
+static constexpr AttributeId PacketTxCount = 0x0003;
+static constexpr AttributeId TxErrCount = 0x0004;
 static constexpr AttributeId CollisionCount = 0x0005;
-static constexpr AttributeId OverrunCount   = 0x0006;
-static constexpr AttributeId CarrierDetect  = 0x0007;
+static constexpr AttributeId OverrunCount = 0x0006;
+static constexpr AttributeId CarrierDetect = 0x0007;
 static constexpr AttributeId TimeSinceReset = 0x0008;
 } // namespace Ids
 } // namespace Attributes
@@ -440,20 +441,20 @@ static constexpr AttributeId TimeSinceReset = 0x0008;
 namespace BridgedDeviceBasic {
 namespace Attributes {
 namespace Ids {
-static constexpr AttributeId VendorName            = 0x0001;
-static constexpr AttributeId VendorID              = 0x0002;
-static constexpr AttributeId ProductName           = 0x0003;
-static constexpr AttributeId UserLabel             = 0x0005;
-static constexpr AttributeId HardwareVersion       = 0x0007;
+static constexpr AttributeId VendorName = 0x0001;
+static constexpr AttributeId VendorID = 0x0002;
+static constexpr AttributeId ProductName = 0x0003;
+static constexpr AttributeId UserLabel = 0x0005;
+static constexpr AttributeId HardwareVersion = 0x0007;
 static constexpr AttributeId HardwareVersionString = 0x0008;
-static constexpr AttributeId SoftwareVersion       = 0x0009;
+static constexpr AttributeId SoftwareVersion = 0x0009;
 static constexpr AttributeId SoftwareVersionString = 0x000A;
-static constexpr AttributeId ManufacturingDate     = 0x000B;
-static constexpr AttributeId PartNumber            = 0x000C;
-static constexpr AttributeId ProductURL            = 0x000D;
-static constexpr AttributeId ProductLabel          = 0x000E;
-static constexpr AttributeId SerialNumber          = 0x000F;
-static constexpr AttributeId Reachable             = 0x0011;
+static constexpr AttributeId ManufacturingDate = 0x000B;
+static constexpr AttributeId PartNumber = 0x000C;
+static constexpr AttributeId ProductURL = 0x000D;
+static constexpr AttributeId ProductLabel = 0x000E;
+static constexpr AttributeId SerialNumber = 0x000F;
+static constexpr AttributeId Reachable = 0x0011;
 } // namespace Ids
 } // namespace Attributes
 } // namespace BridgedDeviceBasic
@@ -462,8 +463,8 @@ namespace Switch {
 namespace Attributes {
 namespace Ids {
 static constexpr AttributeId NumberOfPositions = 0x0000;
-static constexpr AttributeId CurrentPosition   = 0x0001;
-static constexpr AttributeId MultiPressMax     = 0x0002;
+static constexpr AttributeId CurrentPosition = 0x0001;
+static constexpr AttributeId MultiPressMax = 0x0002;
 } // namespace Ids
 } // namespace Attributes
 } // namespace Switch
@@ -488,10 +489,10 @@ namespace ShadeConfiguration {
 namespace Attributes {
 namespace Ids {
 static constexpr AttributeId PhysicalClosedLimit = 0x0000;
-static constexpr AttributeId MotorStepSize       = 0x0001;
-static constexpr AttributeId Status              = 0x0002;
-static constexpr AttributeId ClosedLimit         = 0x0010;
-static constexpr AttributeId Mode                = 0x0011;
+static constexpr AttributeId MotorStepSize = 0x0001;
+static constexpr AttributeId Status = 0x0002;
+static constexpr AttributeId ClosedLimit = 0x0010;
+static constexpr AttributeId Mode = 0x0011;
 } // namespace Ids
 } // namespace Attributes
 } // namespace ShadeConfiguration
@@ -499,49 +500,49 @@ static constexpr AttributeId Mode                = 0x0011;
 namespace DoorLock {
 namespace Attributes {
 namespace Ids {
-static constexpr AttributeId LockState                           = 0x0000;
-static constexpr AttributeId LockType                            = 0x0001;
-static constexpr AttributeId ActuatorEnabled                     = 0x0002;
-static constexpr AttributeId DoorState                           = 0x0003;
-static constexpr AttributeId DoorOpenEvents                      = 0x0004;
-static constexpr AttributeId DoorClosedEvents                    = 0x0005;
-static constexpr AttributeId OpenPeriod                          = 0x0006;
-static constexpr AttributeId NumLockRecordsSupported             = 0x0010;
-static constexpr AttributeId NumTotalUsersSupported              = 0x0011;
-static constexpr AttributeId NumPinUsersSupported                = 0x0012;
-static constexpr AttributeId NumRfidUsersSupported               = 0x0013;
+static constexpr AttributeId LockState = 0x0000;
+static constexpr AttributeId LockType = 0x0001;
+static constexpr AttributeId ActuatorEnabled = 0x0002;
+static constexpr AttributeId DoorState = 0x0003;
+static constexpr AttributeId DoorOpenEvents = 0x0004;
+static constexpr AttributeId DoorClosedEvents = 0x0005;
+static constexpr AttributeId OpenPeriod = 0x0006;
+static constexpr AttributeId NumLockRecordsSupported = 0x0010;
+static constexpr AttributeId NumTotalUsersSupported = 0x0011;
+static constexpr AttributeId NumPinUsersSupported = 0x0012;
+static constexpr AttributeId NumRfidUsersSupported = 0x0013;
 static constexpr AttributeId NumWeekdaySchedulesSupportedPerUser = 0x0014;
 static constexpr AttributeId NumYeardaySchedulesSupportedPerUser = 0x0015;
 static constexpr AttributeId NumHolidaySchedulesSupportedPerUser = 0x0016;
-static constexpr AttributeId MaxPinLength                        = 0x0017;
-static constexpr AttributeId MinPinLength                        = 0x0018;
-static constexpr AttributeId MaxRfidCodeLength                   = 0x0019;
-static constexpr AttributeId MinRfidCodeLength                   = 0x001A;
-static constexpr AttributeId EnableLogging                       = 0x0020;
-static constexpr AttributeId Language                            = 0x0021;
-static constexpr AttributeId LedSettings                         = 0x0022;
-static constexpr AttributeId AutoRelockTime                      = 0x0023;
-static constexpr AttributeId SoundVolume                         = 0x0024;
-static constexpr AttributeId OperatingMode                       = 0x0025;
-static constexpr AttributeId SupportedOperatingModes             = 0x0026;
-static constexpr AttributeId DefaultConfigurationRegister        = 0x0027;
-static constexpr AttributeId EnableLocalProgramming              = 0x0028;
-static constexpr AttributeId EnableOneTouchLocking               = 0x0029;
-static constexpr AttributeId EnableInsideStatusLed               = 0x002A;
-static constexpr AttributeId EnablePrivacyModeButton             = 0x002B;
-static constexpr AttributeId WrongCodeEntryLimit                 = 0x0030;
-static constexpr AttributeId UserCodeTemporaryDisableTime        = 0x0031;
-static constexpr AttributeId SendPinOverTheAir                   = 0x0032;
-static constexpr AttributeId RequirePinForRfOperation            = 0x0033;
-static constexpr AttributeId ZigbeeSecurityLevel                 = 0x0034;
-static constexpr AttributeId AlarmMask                           = 0x0040;
-static constexpr AttributeId KeypadOperationEventMask            = 0x0041;
-static constexpr AttributeId RfOperationEventMask                = 0x0042;
-static constexpr AttributeId ManualOperationEventMask            = 0x0043;
-static constexpr AttributeId RfidOperationEventMask              = 0x0044;
-static constexpr AttributeId KeypadProgrammingEventMask          = 0x0045;
-static constexpr AttributeId RfProgrammingEventMask              = 0x0046;
-static constexpr AttributeId RfidProgrammingEventMask            = 0x0047;
+static constexpr AttributeId MaxPinLength = 0x0017;
+static constexpr AttributeId MinPinLength = 0x0018;
+static constexpr AttributeId MaxRfidCodeLength = 0x0019;
+static constexpr AttributeId MinRfidCodeLength = 0x001A;
+static constexpr AttributeId EnableLogging = 0x0020;
+static constexpr AttributeId Language = 0x0021;
+static constexpr AttributeId LedSettings = 0x0022;
+static constexpr AttributeId AutoRelockTime = 0x0023;
+static constexpr AttributeId SoundVolume = 0x0024;
+static constexpr AttributeId OperatingMode = 0x0025;
+static constexpr AttributeId SupportedOperatingModes = 0x0026;
+static constexpr AttributeId DefaultConfigurationRegister = 0x0027;
+static constexpr AttributeId EnableLocalProgramming = 0x0028;
+static constexpr AttributeId EnableOneTouchLocking = 0x0029;
+static constexpr AttributeId EnableInsideStatusLed = 0x002A;
+static constexpr AttributeId EnablePrivacyModeButton = 0x002B;
+static constexpr AttributeId WrongCodeEntryLimit = 0x0030;
+static constexpr AttributeId UserCodeTemporaryDisableTime = 0x0031;
+static constexpr AttributeId SendPinOverTheAir = 0x0032;
+static constexpr AttributeId RequirePinForRfOperation = 0x0033;
+static constexpr AttributeId ZigbeeSecurityLevel = 0x0034;
+static constexpr AttributeId AlarmMask = 0x0040;
+static constexpr AttributeId KeypadOperationEventMask = 0x0041;
+static constexpr AttributeId RfOperationEventMask = 0x0042;
+static constexpr AttributeId ManualOperationEventMask = 0x0043;
+static constexpr AttributeId RfidOperationEventMask = 0x0044;
+static constexpr AttributeId KeypadProgrammingEventMask = 0x0045;
+static constexpr AttributeId RfProgrammingEventMask = 0x0046;
+static constexpr AttributeId RfidProgrammingEventMask = 0x0047;
 } // namespace Ids
 } // namespace Attributes
 } // namespace DoorLock
@@ -549,33 +550,33 @@ static constexpr AttributeId RfidProgrammingEventMask            = 0x0047;
 namespace WindowCovering {
 namespace Attributes {
 namespace Ids {
-static constexpr AttributeId Type                             = 0x0000;
-static constexpr AttributeId PhysicalClosedLimitLift          = 0x0001;
-static constexpr AttributeId PhysicalClosedLimitTilt          = 0x0002;
-static constexpr AttributeId CurrentPositionLift              = 0x0003;
-static constexpr AttributeId CurrentPositionTilt              = 0x0004;
-static constexpr AttributeId NumberOfActuationsLift           = 0x0005;
-static constexpr AttributeId NumberOfActuationsTilt           = 0x0006;
-static constexpr AttributeId ConfigStatus                     = 0x0007;
-static constexpr AttributeId CurrentPositionLiftPercentage    = 0x0008;
-static constexpr AttributeId CurrentPositionTiltPercentage    = 0x0009;
-static constexpr AttributeId OperationalStatus                = 0x000A;
-static constexpr AttributeId TargetPositionLiftPercent100ths  = 0x000B;
-static constexpr AttributeId TargetPositionTiltPercent100ths  = 0x000C;
-static constexpr AttributeId EndProductType                   = 0x000D;
+static constexpr AttributeId Type = 0x0000;
+static constexpr AttributeId PhysicalClosedLimitLift = 0x0001;
+static constexpr AttributeId PhysicalClosedLimitTilt = 0x0002;
+static constexpr AttributeId CurrentPositionLift = 0x0003;
+static constexpr AttributeId CurrentPositionTilt = 0x0004;
+static constexpr AttributeId NumberOfActuationsLift = 0x0005;
+static constexpr AttributeId NumberOfActuationsTilt = 0x0006;
+static constexpr AttributeId ConfigStatus = 0x0007;
+static constexpr AttributeId CurrentPositionLiftPercentage = 0x0008;
+static constexpr AttributeId CurrentPositionTiltPercentage = 0x0009;
+static constexpr AttributeId OperationalStatus = 0x000A;
+static constexpr AttributeId TargetPositionLiftPercent100ths = 0x000B;
+static constexpr AttributeId TargetPositionTiltPercent100ths = 0x000C;
+static constexpr AttributeId EndProductType = 0x000D;
 static constexpr AttributeId CurrentPositionLiftPercent100ths = 0x000E;
 static constexpr AttributeId CurrentPositionTiltPercent100ths = 0x000F;
-static constexpr AttributeId InstalledOpenLimitLift           = 0x0010;
-static constexpr AttributeId InstalledClosedLimitLift         = 0x0011;
-static constexpr AttributeId InstalledOpenLimitTilt           = 0x0012;
-static constexpr AttributeId InstalledClosedLimitTilt         = 0x0013;
-static constexpr AttributeId VelocityLift                     = 0x0014;
-static constexpr AttributeId AccelerationTimeLift             = 0x0015;
-static constexpr AttributeId DecelerationTimeLift             = 0x0016;
-static constexpr AttributeId Mode                             = 0x0017;
-static constexpr AttributeId IntermediateSetpointsLift        = 0x0018;
-static constexpr AttributeId IntermediateSetpointsTilt        = 0x0019;
-static constexpr AttributeId SafetyStatus                     = 0x001A;
+static constexpr AttributeId InstalledOpenLimitLift = 0x0010;
+static constexpr AttributeId InstalledClosedLimitLift = 0x0011;
+static constexpr AttributeId InstalledOpenLimitTilt = 0x0012;
+static constexpr AttributeId InstalledClosedLimitTilt = 0x0013;
+static constexpr AttributeId VelocityLift = 0x0014;
+static constexpr AttributeId AccelerationTimeLift = 0x0015;
+static constexpr AttributeId DecelerationTimeLift = 0x0016;
+static constexpr AttributeId Mode = 0x0017;
+static constexpr AttributeId IntermediateSetpointsLift = 0x0018;
+static constexpr AttributeId IntermediateSetpointsTilt = 0x0019;
+static constexpr AttributeId SafetyStatus = 0x001A;
 } // namespace Ids
 } // namespace Attributes
 } // namespace WindowCovering
@@ -583,16 +584,16 @@ static constexpr AttributeId SafetyStatus                     = 0x001A;
 namespace BarrierControl {
 namespace Attributes {
 namespace Ids {
-static constexpr AttributeId BarrierMovingState        = 0x0001;
-static constexpr AttributeId BarrierSafetyStatus       = 0x0002;
-static constexpr AttributeId BarrierCapabilities       = 0x0003;
-static constexpr AttributeId BarrierOpenEvents         = 0x0004;
-static constexpr AttributeId BarrierCloseEvents        = 0x0005;
-static constexpr AttributeId BarrierCommandOpenEvents  = 0x0006;
+static constexpr AttributeId BarrierMovingState = 0x0001;
+static constexpr AttributeId BarrierSafetyStatus = 0x0002;
+static constexpr AttributeId BarrierCapabilities = 0x0003;
+static constexpr AttributeId BarrierOpenEvents = 0x0004;
+static constexpr AttributeId BarrierCloseEvents = 0x0005;
+static constexpr AttributeId BarrierCommandOpenEvents = 0x0006;
 static constexpr AttributeId BarrierCommandCloseEvents = 0x0007;
-static constexpr AttributeId BarrierOpenPeriod         = 0x0008;
-static constexpr AttributeId BarrierClosePeriod        = 0x0009;
-static constexpr AttributeId BarrierPosition           = 0x000A;
+static constexpr AttributeId BarrierOpenPeriod = 0x0008;
+static constexpr AttributeId BarrierClosePeriod = 0x0009;
+static constexpr AttributeId BarrierPosition = 0x000A;
 } // namespace Ids
 } // namespace Attributes
 } // namespace BarrierControl
@@ -600,30 +601,30 @@ static constexpr AttributeId BarrierPosition           = 0x000A;
 namespace PumpConfigurationAndControl {
 namespace Attributes {
 namespace Ids {
-static constexpr AttributeId MaxPressure            = 0x0000;
-static constexpr AttributeId MaxSpeed               = 0x0001;
-static constexpr AttributeId MaxFlow                = 0x0002;
-static constexpr AttributeId MinConstPressure       = 0x0003;
-static constexpr AttributeId MaxConstPressure       = 0x0004;
-static constexpr AttributeId MinCompPressure        = 0x0005;
-static constexpr AttributeId MaxCompPressure        = 0x0006;
-static constexpr AttributeId MinConstSpeed          = 0x0007;
-static constexpr AttributeId MaxConstSpeed          = 0x0008;
-static constexpr AttributeId MinConstFlow           = 0x0009;
-static constexpr AttributeId MaxConstFlow           = 0x000A;
-static constexpr AttributeId MinConstTemp           = 0x000B;
-static constexpr AttributeId MaxConstTemp           = 0x000C;
-static constexpr AttributeId PumpStatus             = 0x0010;
+static constexpr AttributeId MaxPressure = 0x0000;
+static constexpr AttributeId MaxSpeed = 0x0001;
+static constexpr AttributeId MaxFlow = 0x0002;
+static constexpr AttributeId MinConstPressure = 0x0003;
+static constexpr AttributeId MaxConstPressure = 0x0004;
+static constexpr AttributeId MinCompPressure = 0x0005;
+static constexpr AttributeId MaxCompPressure = 0x0006;
+static constexpr AttributeId MinConstSpeed = 0x0007;
+static constexpr AttributeId MaxConstSpeed = 0x0008;
+static constexpr AttributeId MinConstFlow = 0x0009;
+static constexpr AttributeId MaxConstFlow = 0x000A;
+static constexpr AttributeId MinConstTemp = 0x000B;
+static constexpr AttributeId MaxConstTemp = 0x000C;
+static constexpr AttributeId PumpStatus = 0x0010;
 static constexpr AttributeId EffectiveOperationMode = 0x0011;
-static constexpr AttributeId EffectiveControlMode   = 0x0012;
-static constexpr AttributeId Capacity               = 0x0013;
-static constexpr AttributeId Speed                  = 0x0014;
-static constexpr AttributeId LifetimeRunningHours   = 0x0015;
-static constexpr AttributeId Power                  = 0x0016;
+static constexpr AttributeId EffectiveControlMode = 0x0012;
+static constexpr AttributeId Capacity = 0x0013;
+static constexpr AttributeId Speed = 0x0014;
+static constexpr AttributeId LifetimeRunningHours = 0x0015;
+static constexpr AttributeId Power = 0x0016;
 static constexpr AttributeId LifetimeEnergyConsumed = 0x0017;
-static constexpr AttributeId OperationMode          = 0x0020;
-static constexpr AttributeId ControlMode            = 0x0021;
-static constexpr AttributeId AlarmMask              = 0x0022;
+static constexpr AttributeId OperationMode = 0x0020;
+static constexpr AttributeId ControlMode = 0x0021;
+static constexpr AttributeId AlarmMask = 0x0022;
 } // namespace Ids
 } // namespace Attributes
 } // namespace PumpConfigurationAndControl
@@ -631,49 +632,49 @@ static constexpr AttributeId AlarmMask              = 0x0022;
 namespace Thermostat {
 namespace Attributes {
 namespace Ids {
-static constexpr AttributeId LocalTemperature                   = 0x0000;
-static constexpr AttributeId OutdoorTemperature                 = 0x0001;
-static constexpr AttributeId Occupancy                          = 0x0002;
-static constexpr AttributeId AbsMinHeatSetpointLimit            = 0x0003;
-static constexpr AttributeId AbsMaxHeatSetpointLimit            = 0x0004;
-static constexpr AttributeId AbsMinCoolSetpointLimit            = 0x0005;
-static constexpr AttributeId AbsMaxCoolSetpointLimit            = 0x0006;
-static constexpr AttributeId PiCoolingDemand                    = 0x0007;
-static constexpr AttributeId PiHeatingDemand                    = 0x0008;
-static constexpr AttributeId HvacSystemTypeConfiguration        = 0x0009;
-static constexpr AttributeId LocalTemperatureCalibration        = 0x0010;
-static constexpr AttributeId OccupiedCoolingSetpoint            = 0x0011;
-static constexpr AttributeId OccupiedHeatingSetpoint            = 0x0012;
-static constexpr AttributeId UnoccupiedCoolingSetpoint          = 0x0013;
-static constexpr AttributeId UnoccupiedHeatingSetpoint          = 0x0014;
-static constexpr AttributeId MinHeatSetpointLimit               = 0x0015;
-static constexpr AttributeId MaxHeatSetpointLimit               = 0x0016;
-static constexpr AttributeId MinCoolSetpointLimit               = 0x0017;
-static constexpr AttributeId MaxCoolSetpointLimit               = 0x0018;
-static constexpr AttributeId MinSetpointDeadBand                = 0x0019;
-static constexpr AttributeId RemoteSensing                      = 0x001A;
-static constexpr AttributeId ControlSequenceOfOperation         = 0x001B;
-static constexpr AttributeId SystemMode                         = 0x001C;
-static constexpr AttributeId AlarmMask                          = 0x001D;
-static constexpr AttributeId ThermostatRunningMode              = 0x001E;
-static constexpr AttributeId StartOfWeek                        = 0x0020;
-static constexpr AttributeId NumberOfWeeklyTransitions          = 0x0021;
-static constexpr AttributeId NumberOfDailyTransitions           = 0x0022;
-static constexpr AttributeId TemperatureSetpointHold            = 0x0023;
-static constexpr AttributeId TemperatureSetpointHoldDuration    = 0x0024;
+static constexpr AttributeId LocalTemperature = 0x0000;
+static constexpr AttributeId OutdoorTemperature = 0x0001;
+static constexpr AttributeId Occupancy = 0x0002;
+static constexpr AttributeId AbsMinHeatSetpointLimit = 0x0003;
+static constexpr AttributeId AbsMaxHeatSetpointLimit = 0x0004;
+static constexpr AttributeId AbsMinCoolSetpointLimit = 0x0005;
+static constexpr AttributeId AbsMaxCoolSetpointLimit = 0x0006;
+static constexpr AttributeId PiCoolingDemand = 0x0007;
+static constexpr AttributeId PiHeatingDemand = 0x0008;
+static constexpr AttributeId HvacSystemTypeConfiguration = 0x0009;
+static constexpr AttributeId LocalTemperatureCalibration = 0x0010;
+static constexpr AttributeId OccupiedCoolingSetpoint = 0x0011;
+static constexpr AttributeId OccupiedHeatingSetpoint = 0x0012;
+static constexpr AttributeId UnoccupiedCoolingSetpoint = 0x0013;
+static constexpr AttributeId UnoccupiedHeatingSetpoint = 0x0014;
+static constexpr AttributeId MinHeatSetpointLimit = 0x0015;
+static constexpr AttributeId MaxHeatSetpointLimit = 0x0016;
+static constexpr AttributeId MinCoolSetpointLimit = 0x0017;
+static constexpr AttributeId MaxCoolSetpointLimit = 0x0018;
+static constexpr AttributeId MinSetpointDeadBand = 0x0019;
+static constexpr AttributeId RemoteSensing = 0x001A;
+static constexpr AttributeId ControlSequenceOfOperation = 0x001B;
+static constexpr AttributeId SystemMode = 0x001C;
+static constexpr AttributeId AlarmMask = 0x001D;
+static constexpr AttributeId ThermostatRunningMode = 0x001E;
+static constexpr AttributeId StartOfWeek = 0x0020;
+static constexpr AttributeId NumberOfWeeklyTransitions = 0x0021;
+static constexpr AttributeId NumberOfDailyTransitions = 0x0022;
+static constexpr AttributeId TemperatureSetpointHold = 0x0023;
+static constexpr AttributeId TemperatureSetpointHoldDuration = 0x0024;
 static constexpr AttributeId ThermostatProgrammingOperationMode = 0x0025;
-static constexpr AttributeId HvacRelayState                     = 0x0029;
-static constexpr AttributeId SetpointChangeSource               = 0x0030;
-static constexpr AttributeId SetpointChangeAmount               = 0x0031;
-static constexpr AttributeId SetpointChangeSourceTimestamp      = 0x0032;
-static constexpr AttributeId AcType                             = 0x0040;
-static constexpr AttributeId AcCapacity                         = 0x0041;
-static constexpr AttributeId AcRefrigerantType                  = 0x0042;
-static constexpr AttributeId AcCompressor                       = 0x0043;
-static constexpr AttributeId AcErrorCode                        = 0x0044;
-static constexpr AttributeId AcLouverPosition                   = 0x0045;
-static constexpr AttributeId AcCoilTemperature                  = 0x0046;
-static constexpr AttributeId AcCapacityFormat                   = 0x0047;
+static constexpr AttributeId HvacRelayState = 0x0029;
+static constexpr AttributeId SetpointChangeSource = 0x0030;
+static constexpr AttributeId SetpointChangeAmount = 0x0031;
+static constexpr AttributeId SetpointChangeSourceTimestamp = 0x0032;
+static constexpr AttributeId AcType = 0x0040;
+static constexpr AttributeId AcCapacity = 0x0041;
+static constexpr AttributeId AcRefrigerantType = 0x0042;
+static constexpr AttributeId AcCompressor = 0x0043;
+static constexpr AttributeId AcErrorCode = 0x0044;
+static constexpr AttributeId AcLouverPosition = 0x0045;
+static constexpr AttributeId AcCoilTemperature = 0x0046;
+static constexpr AttributeId AcCapacityFormat = 0x0047;
 } // namespace Ids
 } // namespace Attributes
 } // namespace Thermostat
@@ -681,7 +682,7 @@ static constexpr AttributeId AcCapacityFormat                   = 0x0047;
 namespace FanControl {
 namespace Attributes {
 namespace Ids {
-static constexpr AttributeId FanMode         = 0x0000;
+static constexpr AttributeId FanMode = 0x0000;
 static constexpr AttributeId FanModeSequence = 0x0001;
 } // namespace Ids
 } // namespace Attributes
@@ -690,14 +691,14 @@ static constexpr AttributeId FanModeSequence = 0x0001;
 namespace DehumidificationControl {
 namespace Attributes {
 namespace Ids {
-static constexpr AttributeId RelativeHumidity           = 0x0000;
-static constexpr AttributeId DehumidificationCooling    = 0x0001;
+static constexpr AttributeId RelativeHumidity = 0x0000;
+static constexpr AttributeId DehumidificationCooling = 0x0001;
 static constexpr AttributeId RhDehumidificationSetpoint = 0x0010;
-static constexpr AttributeId RelativeHumidityMode       = 0x0011;
-static constexpr AttributeId DehumidificationLockout    = 0x0012;
+static constexpr AttributeId RelativeHumidityMode = 0x0011;
+static constexpr AttributeId DehumidificationLockout = 0x0012;
 static constexpr AttributeId DehumidificationHysteresis = 0x0013;
-static constexpr AttributeId DehumidificationMaxCool    = 0x0014;
-static constexpr AttributeId RelativeHumidityDisplay    = 0x0015;
+static constexpr AttributeId DehumidificationMaxCool = 0x0014;
+static constexpr AttributeId RelativeHumidityDisplay = 0x0015;
 } // namespace Ids
 } // namespace Attributes
 } // namespace DehumidificationControl
@@ -705,8 +706,8 @@ static constexpr AttributeId RelativeHumidityDisplay    = 0x0015;
 namespace ThermostatUserInterfaceConfiguration {
 namespace Attributes {
 namespace Ids {
-static constexpr AttributeId TemperatureDisplayMode        = 0x0000;
-static constexpr AttributeId KeypadLockout                 = 0x0001;
+static constexpr AttributeId TemperatureDisplayMode = 0x0000;
+static constexpr AttributeId KeypadLockout = 0x0001;
 static constexpr AttributeId ScheduleProgrammingVisibility = 0x0002;
 } // namespace Ids
 } // namespace Attributes
@@ -715,58 +716,58 @@ static constexpr AttributeId ScheduleProgrammingVisibility = 0x0002;
 namespace ColorControl {
 namespace Attributes {
 namespace Ids {
-static constexpr AttributeId CurrentHue                      = 0x0000;
-static constexpr AttributeId CurrentSaturation               = 0x0001;
-static constexpr AttributeId RemainingTime                   = 0x0002;
-static constexpr AttributeId CurrentX                        = 0x0003;
-static constexpr AttributeId CurrentY                        = 0x0004;
-static constexpr AttributeId DriftCompensation               = 0x0005;
-static constexpr AttributeId CompensationText                = 0x0006;
-static constexpr AttributeId ColorTemperature                = 0x0007;
-static constexpr AttributeId ColorMode                       = 0x0008;
-static constexpr AttributeId ColorControlOptions             = 0x000F;
-static constexpr AttributeId NumberOfPrimaries               = 0x0010;
-static constexpr AttributeId Primary1X                       = 0x0011;
-static constexpr AttributeId Primary1Y                       = 0x0012;
-static constexpr AttributeId Primary1Intensity               = 0x0013;
-static constexpr AttributeId Primary2X                       = 0x0015;
-static constexpr AttributeId Primary2Y                       = 0x0016;
-static constexpr AttributeId Primary2Intensity               = 0x0017;
-static constexpr AttributeId Primary3X                       = 0x0019;
-static constexpr AttributeId Primary3Y                       = 0x001A;
-static constexpr AttributeId Primary3Intensity               = 0x001B;
-static constexpr AttributeId Primary4X                       = 0x0020;
-static constexpr AttributeId Primary4Y                       = 0x0021;
-static constexpr AttributeId Primary4Intensity               = 0x0022;
-static constexpr AttributeId Primary5X                       = 0x0024;
-static constexpr AttributeId Primary5Y                       = 0x0025;
-static constexpr AttributeId Primary5Intensity               = 0x0026;
-static constexpr AttributeId Primary6X                       = 0x0028;
-static constexpr AttributeId Primary6Y                       = 0x0029;
-static constexpr AttributeId Primary6Intensity               = 0x002A;
-static constexpr AttributeId WhitePointX                     = 0x0030;
-static constexpr AttributeId WhitePointY                     = 0x0031;
-static constexpr AttributeId ColorPointRX                    = 0x0032;
-static constexpr AttributeId ColorPointRY                    = 0x0033;
-static constexpr AttributeId ColorPointRIntensity            = 0x0034;
-static constexpr AttributeId ColorPointGX                    = 0x0036;
-static constexpr AttributeId ColorPointGY                    = 0x0037;
-static constexpr AttributeId ColorPointGIntensity            = 0x0038;
-static constexpr AttributeId ColorPointBX                    = 0x003A;
-static constexpr AttributeId ColorPointBY                    = 0x003B;
-static constexpr AttributeId ColorPointBIntensity            = 0x003C;
-static constexpr AttributeId EnhancedCurrentHue              = 0x4000;
-static constexpr AttributeId EnhancedColorMode               = 0x4001;
-static constexpr AttributeId ColorLoopActive                 = 0x4002;
-static constexpr AttributeId ColorLoopDirection              = 0x4003;
-static constexpr AttributeId ColorLoopTime                   = 0x4004;
-static constexpr AttributeId ColorLoopStartEnhancedHue       = 0x4005;
-static constexpr AttributeId ColorLoopStoredEnhancedHue      = 0x4006;
-static constexpr AttributeId ColorCapabilities               = 0x400A;
-static constexpr AttributeId ColorTempPhysicalMin            = 0x400B;
-static constexpr AttributeId ColorTempPhysicalMax            = 0x400C;
+static constexpr AttributeId CurrentHue = 0x0000;
+static constexpr AttributeId CurrentSaturation = 0x0001;
+static constexpr AttributeId RemainingTime = 0x0002;
+static constexpr AttributeId CurrentX = 0x0003;
+static constexpr AttributeId CurrentY = 0x0004;
+static constexpr AttributeId DriftCompensation = 0x0005;
+static constexpr AttributeId CompensationText = 0x0006;
+static constexpr AttributeId ColorTemperature = 0x0007;
+static constexpr AttributeId ColorMode = 0x0008;
+static constexpr AttributeId ColorControlOptions = 0x000F;
+static constexpr AttributeId NumberOfPrimaries = 0x0010;
+static constexpr AttributeId Primary1X = 0x0011;
+static constexpr AttributeId Primary1Y = 0x0012;
+static constexpr AttributeId Primary1Intensity = 0x0013;
+static constexpr AttributeId Primary2X = 0x0015;
+static constexpr AttributeId Primary2Y = 0x0016;
+static constexpr AttributeId Primary2Intensity = 0x0017;
+static constexpr AttributeId Primary3X = 0x0019;
+static constexpr AttributeId Primary3Y = 0x001A;
+static constexpr AttributeId Primary3Intensity = 0x001B;
+static constexpr AttributeId Primary4X = 0x0020;
+static constexpr AttributeId Primary4Y = 0x0021;
+static constexpr AttributeId Primary4Intensity = 0x0022;
+static constexpr AttributeId Primary5X = 0x0024;
+static constexpr AttributeId Primary5Y = 0x0025;
+static constexpr AttributeId Primary5Intensity = 0x0026;
+static constexpr AttributeId Primary6X = 0x0028;
+static constexpr AttributeId Primary6Y = 0x0029;
+static constexpr AttributeId Primary6Intensity = 0x002A;
+static constexpr AttributeId WhitePointX = 0x0030;
+static constexpr AttributeId WhitePointY = 0x0031;
+static constexpr AttributeId ColorPointRX = 0x0032;
+static constexpr AttributeId ColorPointRY = 0x0033;
+static constexpr AttributeId ColorPointRIntensity = 0x0034;
+static constexpr AttributeId ColorPointGX = 0x0036;
+static constexpr AttributeId ColorPointGY = 0x0037;
+static constexpr AttributeId ColorPointGIntensity = 0x0038;
+static constexpr AttributeId ColorPointBX = 0x003A;
+static constexpr AttributeId ColorPointBY = 0x003B;
+static constexpr AttributeId ColorPointBIntensity = 0x003C;
+static constexpr AttributeId EnhancedCurrentHue = 0x4000;
+static constexpr AttributeId EnhancedColorMode = 0x4001;
+static constexpr AttributeId ColorLoopActive = 0x4002;
+static constexpr AttributeId ColorLoopDirection = 0x4003;
+static constexpr AttributeId ColorLoopTime = 0x4004;
+static constexpr AttributeId ColorLoopStartEnhancedHue = 0x4005;
+static constexpr AttributeId ColorLoopStoredEnhancedHue = 0x4006;
+static constexpr AttributeId ColorCapabilities = 0x400A;
+static constexpr AttributeId ColorTempPhysicalMin = 0x400B;
+static constexpr AttributeId ColorTempPhysicalMax = 0x400C;
 static constexpr AttributeId CoupleColorTempToLevelMinMireds = 0x400D;
-static constexpr AttributeId StartUpColorTemperatureMireds   = 0x4010;
+static constexpr AttributeId StartUpColorTemperatureMireds = 0x4010;
 } // namespace Ids
 } // namespace Attributes
 } // namespace ColorControl
@@ -774,22 +775,22 @@ static constexpr AttributeId StartUpColorTemperatureMireds   = 0x4010;
 namespace BallastConfiguration {
 namespace Attributes {
 namespace Ids {
-static constexpr AttributeId PhysicalMinLevel        = 0x0000;
-static constexpr AttributeId PhysicalMaxLevel        = 0x0001;
-static constexpr AttributeId BallastStatus           = 0x0002;
-static constexpr AttributeId MinLevel                = 0x0010;
-static constexpr AttributeId MaxLevel                = 0x0011;
-static constexpr AttributeId PowerOnLevel            = 0x0012;
-static constexpr AttributeId PowerOnFadeTime         = 0x0013;
-static constexpr AttributeId IntrinsicBallastFactor  = 0x0014;
+static constexpr AttributeId PhysicalMinLevel = 0x0000;
+static constexpr AttributeId PhysicalMaxLevel = 0x0001;
+static constexpr AttributeId BallastStatus = 0x0002;
+static constexpr AttributeId MinLevel = 0x0010;
+static constexpr AttributeId MaxLevel = 0x0011;
+static constexpr AttributeId PowerOnLevel = 0x0012;
+static constexpr AttributeId PowerOnFadeTime = 0x0013;
+static constexpr AttributeId IntrinsicBallastFactor = 0x0014;
 static constexpr AttributeId BallastFactorAdjustment = 0x0015;
-static constexpr AttributeId LampQuality             = 0x0020;
-static constexpr AttributeId LampType                = 0x0030;
-static constexpr AttributeId LampManufacturer        = 0x0031;
-static constexpr AttributeId LampRatedHours          = 0x0032;
-static constexpr AttributeId LampBurnHours           = 0x0033;
-static constexpr AttributeId LampAlarmMode           = 0x0034;
-static constexpr AttributeId LampBurnHoursTripPoint  = 0x0035;
+static constexpr AttributeId LampQuality = 0x0020;
+static constexpr AttributeId LampType = 0x0030;
+static constexpr AttributeId LampManufacturer = 0x0031;
+static constexpr AttributeId LampRatedHours = 0x0032;
+static constexpr AttributeId LampBurnHours = 0x0033;
+static constexpr AttributeId LampAlarmMode = 0x0034;
+static constexpr AttributeId LampBurnHoursTripPoint = 0x0035;
 } // namespace Ids
 } // namespace Attributes
 } // namespace BallastConfiguration
@@ -797,11 +798,11 @@ static constexpr AttributeId LampBurnHoursTripPoint  = 0x0035;
 namespace IlluminanceMeasurement {
 namespace Attributes {
 namespace Ids {
-static constexpr AttributeId MeasuredValue    = 0x0000;
+static constexpr AttributeId MeasuredValue = 0x0000;
 static constexpr AttributeId MinMeasuredValue = 0x0001;
 static constexpr AttributeId MaxMeasuredValue = 0x0002;
-static constexpr AttributeId Tolerance        = 0x0003;
-static constexpr AttributeId LightSensorType  = 0x0004;
+static constexpr AttributeId Tolerance = 0x0003;
+static constexpr AttributeId LightSensorType = 0x0004;
 } // namespace Ids
 } // namespace Attributes
 } // namespace IlluminanceMeasurement
@@ -809,8 +810,8 @@ static constexpr AttributeId LightSensorType  = 0x0004;
 namespace IlluminanceLevelSensing {
 namespace Attributes {
 namespace Ids {
-static constexpr AttributeId LevelStatus            = 0x0000;
-static constexpr AttributeId LightSensorType        = 0x0001;
+static constexpr AttributeId LevelStatus = 0x0000;
+static constexpr AttributeId LightSensorType = 0x0001;
 static constexpr AttributeId IlluminanceLevelTarget = 0x0010;
 } // namespace Ids
 } // namespace Attributes
@@ -819,10 +820,10 @@ static constexpr AttributeId IlluminanceLevelTarget = 0x0010;
 namespace TemperatureMeasurement {
 namespace Attributes {
 namespace Ids {
-static constexpr AttributeId MeasuredValue    = 0x0000;
+static constexpr AttributeId MeasuredValue = 0x0000;
 static constexpr AttributeId MinMeasuredValue = 0x0001;
 static constexpr AttributeId MaxMeasuredValue = 0x0002;
-static constexpr AttributeId Tolerance        = 0x0003;
+static constexpr AttributeId Tolerance = 0x0003;
 } // namespace Ids
 } // namespace Attributes
 } // namespace TemperatureMeasurement
@@ -830,15 +831,15 @@ static constexpr AttributeId Tolerance        = 0x0003;
 namespace PressureMeasurement {
 namespace Attributes {
 namespace Ids {
-static constexpr AttributeId MeasuredValue    = 0x0000;
+static constexpr AttributeId MeasuredValue = 0x0000;
 static constexpr AttributeId MinMeasuredValue = 0x0001;
 static constexpr AttributeId MaxMeasuredValue = 0x0002;
-static constexpr AttributeId Tolerance        = 0x0003;
-static constexpr AttributeId ScaledValue      = 0x0010;
-static constexpr AttributeId MinScaledValue   = 0x0011;
-static constexpr AttributeId MaxScaledValue   = 0x0012;
-static constexpr AttributeId ScaledTolerance  = 0x0013;
-static constexpr AttributeId Scale            = 0x0014;
+static constexpr AttributeId Tolerance = 0x0003;
+static constexpr AttributeId ScaledValue = 0x0010;
+static constexpr AttributeId MinScaledValue = 0x0011;
+static constexpr AttributeId MaxScaledValue = 0x0012;
+static constexpr AttributeId ScaledTolerance = 0x0013;
+static constexpr AttributeId Scale = 0x0014;
 } // namespace Ids
 } // namespace Attributes
 } // namespace PressureMeasurement
@@ -846,10 +847,10 @@ static constexpr AttributeId Scale            = 0x0014;
 namespace FlowMeasurement {
 namespace Attributes {
 namespace Ids {
-static constexpr AttributeId MeasuredValue    = 0x0000;
+static constexpr AttributeId MeasuredValue = 0x0000;
 static constexpr AttributeId MinMeasuredValue = 0x0001;
 static constexpr AttributeId MaxMeasuredValue = 0x0002;
-static constexpr AttributeId Tolerance        = 0x0003;
+static constexpr AttributeId Tolerance = 0x0003;
 } // namespace Ids
 } // namespace Attributes
 } // namespace FlowMeasurement
@@ -857,10 +858,10 @@ static constexpr AttributeId Tolerance        = 0x0003;
 namespace RelativeHumidityMeasurement {
 namespace Attributes {
 namespace Ids {
-static constexpr AttributeId MeasuredValue    = 0x0000;
+static constexpr AttributeId MeasuredValue = 0x0000;
 static constexpr AttributeId MinMeasuredValue = 0x0001;
 static constexpr AttributeId MaxMeasuredValue = 0x0002;
-static constexpr AttributeId Tolerance        = 0x0003;
+static constexpr AttributeId Tolerance = 0x0003;
 } // namespace Ids
 } // namespace Attributes
 } // namespace RelativeHumidityMeasurement
@@ -868,17 +869,17 @@ static constexpr AttributeId Tolerance        = 0x0003;
 namespace OccupancySensing {
 namespace Attributes {
 namespace Ids {
-static constexpr AttributeId Occupancy                                    = 0x0000;
-static constexpr AttributeId OccupancySensorType                          = 0x0001;
-static constexpr AttributeId OccupancySensorTypeBitmap                    = 0x0002;
-static constexpr AttributeId PirOccupiedToUnoccupiedDelay                 = 0x0010;
-static constexpr AttributeId PirUnoccupiedToOccupiedDelay                 = 0x0011;
-static constexpr AttributeId PirUnoccupiedToOccupiedThreshold             = 0x0012;
-static constexpr AttributeId UltrasonicOccupiedToUnoccupiedDelay          = 0x0020;
-static constexpr AttributeId UltrasonicUnoccupiedToOccupiedDelay          = 0x0021;
-static constexpr AttributeId UltrasonicUnoccupiedToOccupiedThreshold      = 0x0022;
-static constexpr AttributeId PhysicalContactOccupiedToUnoccupiedDelay     = 0x0030;
-static constexpr AttributeId PhysicalContactUnoccupiedToOccupiedDelay     = 0x0031;
+static constexpr AttributeId Occupancy = 0x0000;
+static constexpr AttributeId OccupancySensorType = 0x0001;
+static constexpr AttributeId OccupancySensorTypeBitmap = 0x0002;
+static constexpr AttributeId PirOccupiedToUnoccupiedDelay = 0x0010;
+static constexpr AttributeId PirUnoccupiedToOccupiedDelay = 0x0011;
+static constexpr AttributeId PirUnoccupiedToOccupiedThreshold = 0x0012;
+static constexpr AttributeId UltrasonicOccupiedToUnoccupiedDelay = 0x0020;
+static constexpr AttributeId UltrasonicUnoccupiedToOccupiedDelay = 0x0021;
+static constexpr AttributeId UltrasonicUnoccupiedToOccupiedThreshold = 0x0022;
+static constexpr AttributeId PhysicalContactOccupiedToUnoccupiedDelay = 0x0030;
+static constexpr AttributeId PhysicalContactUnoccupiedToOccupiedDelay = 0x0031;
 static constexpr AttributeId PhysicalContactUnoccupiedToOccupiedThreshold = 0x0032;
 } // namespace Ids
 } // namespace Attributes
@@ -887,10 +888,10 @@ static constexpr AttributeId PhysicalContactUnoccupiedToOccupiedThreshold = 0x00
 namespace CarbonMonoxideConcentrationMeasurement {
 namespace Attributes {
 namespace Ids {
-static constexpr AttributeId MeasuredValue    = 0x0000;
+static constexpr AttributeId MeasuredValue = 0x0000;
 static constexpr AttributeId MinMeasuredValue = 0x0001;
 static constexpr AttributeId MaxMeasuredValue = 0x0002;
-static constexpr AttributeId Tolerance        = 0x0003;
+static constexpr AttributeId Tolerance = 0x0003;
 } // namespace Ids
 } // namespace Attributes
 } // namespace CarbonMonoxideConcentrationMeasurement
@@ -898,10 +899,10 @@ static constexpr AttributeId Tolerance        = 0x0003;
 namespace CarbonDioxideConcentrationMeasurement {
 namespace Attributes {
 namespace Ids {
-static constexpr AttributeId MeasuredValue    = 0x0000;
+static constexpr AttributeId MeasuredValue = 0x0000;
 static constexpr AttributeId MinMeasuredValue = 0x0001;
 static constexpr AttributeId MaxMeasuredValue = 0x0002;
-static constexpr AttributeId Tolerance        = 0x0003;
+static constexpr AttributeId Tolerance = 0x0003;
 } // namespace Ids
 } // namespace Attributes
 } // namespace CarbonDioxideConcentrationMeasurement
@@ -909,10 +910,10 @@ static constexpr AttributeId Tolerance        = 0x0003;
 namespace EthyleneConcentrationMeasurement {
 namespace Attributes {
 namespace Ids {
-static constexpr AttributeId MeasuredValue    = 0x0000;
+static constexpr AttributeId MeasuredValue = 0x0000;
 static constexpr AttributeId MinMeasuredValue = 0x0001;
 static constexpr AttributeId MaxMeasuredValue = 0x0002;
-static constexpr AttributeId Tolerance        = 0x0003;
+static constexpr AttributeId Tolerance = 0x0003;
 } // namespace Ids
 } // namespace Attributes
 } // namespace EthyleneConcentrationMeasurement
@@ -920,10 +921,10 @@ static constexpr AttributeId Tolerance        = 0x0003;
 namespace EthyleneOxideConcentrationMeasurement {
 namespace Attributes {
 namespace Ids {
-static constexpr AttributeId MeasuredValue    = 0x0000;
+static constexpr AttributeId MeasuredValue = 0x0000;
 static constexpr AttributeId MinMeasuredValue = 0x0001;
 static constexpr AttributeId MaxMeasuredValue = 0x0002;
-static constexpr AttributeId Tolerance        = 0x0003;
+static constexpr AttributeId Tolerance = 0x0003;
 } // namespace Ids
 } // namespace Attributes
 } // namespace EthyleneOxideConcentrationMeasurement
@@ -931,10 +932,10 @@ static constexpr AttributeId Tolerance        = 0x0003;
 namespace HydrogenConcentrationMeasurement {
 namespace Attributes {
 namespace Ids {
-static constexpr AttributeId MeasuredValue    = 0x0000;
+static constexpr AttributeId MeasuredValue = 0x0000;
 static constexpr AttributeId MinMeasuredValue = 0x0001;
 static constexpr AttributeId MaxMeasuredValue = 0x0002;
-static constexpr AttributeId Tolerance        = 0x0003;
+static constexpr AttributeId Tolerance = 0x0003;
 } // namespace Ids
 } // namespace Attributes
 } // namespace HydrogenConcentrationMeasurement
@@ -942,10 +943,10 @@ static constexpr AttributeId Tolerance        = 0x0003;
 namespace HydrogenSulphideConcentrationMeasurement {
 namespace Attributes {
 namespace Ids {
-static constexpr AttributeId MeasuredValue    = 0x0000;
+static constexpr AttributeId MeasuredValue = 0x0000;
 static constexpr AttributeId MinMeasuredValue = 0x0001;
 static constexpr AttributeId MaxMeasuredValue = 0x0002;
-static constexpr AttributeId Tolerance        = 0x0003;
+static constexpr AttributeId Tolerance = 0x0003;
 } // namespace Ids
 } // namespace Attributes
 } // namespace HydrogenSulphideConcentrationMeasurement
@@ -953,10 +954,10 @@ static constexpr AttributeId Tolerance        = 0x0003;
 namespace NitricOxideConcentrationMeasurement {
 namespace Attributes {
 namespace Ids {
-static constexpr AttributeId MeasuredValue    = 0x0000;
+static constexpr AttributeId MeasuredValue = 0x0000;
 static constexpr AttributeId MinMeasuredValue = 0x0001;
 static constexpr AttributeId MaxMeasuredValue = 0x0002;
-static constexpr AttributeId Tolerance        = 0x0003;
+static constexpr AttributeId Tolerance = 0x0003;
 } // namespace Ids
 } // namespace Attributes
 } // namespace NitricOxideConcentrationMeasurement
@@ -964,10 +965,10 @@ static constexpr AttributeId Tolerance        = 0x0003;
 namespace NitrogenDioxideConcentrationMeasurement {
 namespace Attributes {
 namespace Ids {
-static constexpr AttributeId MeasuredValue    = 0x0000;
+static constexpr AttributeId MeasuredValue = 0x0000;
 static constexpr AttributeId MinMeasuredValue = 0x0001;
 static constexpr AttributeId MaxMeasuredValue = 0x0002;
-static constexpr AttributeId Tolerance        = 0x0003;
+static constexpr AttributeId Tolerance = 0x0003;
 } // namespace Ids
 } // namespace Attributes
 } // namespace NitrogenDioxideConcentrationMeasurement
@@ -975,10 +976,10 @@ static constexpr AttributeId Tolerance        = 0x0003;
 namespace OxygenConcentrationMeasurement {
 namespace Attributes {
 namespace Ids {
-static constexpr AttributeId MeasuredValue    = 0x0000;
+static constexpr AttributeId MeasuredValue = 0x0000;
 static constexpr AttributeId MinMeasuredValue = 0x0001;
 static constexpr AttributeId MaxMeasuredValue = 0x0002;
-static constexpr AttributeId Tolerance        = 0x0003;
+static constexpr AttributeId Tolerance = 0x0003;
 } // namespace Ids
 } // namespace Attributes
 } // namespace OxygenConcentrationMeasurement
@@ -986,10 +987,10 @@ static constexpr AttributeId Tolerance        = 0x0003;
 namespace OzoneConcentrationMeasurement {
 namespace Attributes {
 namespace Ids {
-static constexpr AttributeId MeasuredValue    = 0x0000;
+static constexpr AttributeId MeasuredValue = 0x0000;
 static constexpr AttributeId MinMeasuredValue = 0x0001;
 static constexpr AttributeId MaxMeasuredValue = 0x0002;
-static constexpr AttributeId Tolerance        = 0x0003;
+static constexpr AttributeId Tolerance = 0x0003;
 } // namespace Ids
 } // namespace Attributes
 } // namespace OzoneConcentrationMeasurement
@@ -997,10 +998,10 @@ static constexpr AttributeId Tolerance        = 0x0003;
 namespace SulfurDioxideConcentrationMeasurement {
 namespace Attributes {
 namespace Ids {
-static constexpr AttributeId MeasuredValue    = 0x0000;
+static constexpr AttributeId MeasuredValue = 0x0000;
 static constexpr AttributeId MinMeasuredValue = 0x0001;
 static constexpr AttributeId MaxMeasuredValue = 0x0002;
-static constexpr AttributeId Tolerance        = 0x0003;
+static constexpr AttributeId Tolerance = 0x0003;
 } // namespace Ids
 } // namespace Attributes
 } // namespace SulfurDioxideConcentrationMeasurement
@@ -1008,10 +1009,10 @@ static constexpr AttributeId Tolerance        = 0x0003;
 namespace DissolvedOxygenConcentrationMeasurement {
 namespace Attributes {
 namespace Ids {
-static constexpr AttributeId MeasuredValue    = 0x0000;
+static constexpr AttributeId MeasuredValue = 0x0000;
 static constexpr AttributeId MinMeasuredValue = 0x0001;
 static constexpr AttributeId MaxMeasuredValue = 0x0002;
-static constexpr AttributeId Tolerance        = 0x0003;
+static constexpr AttributeId Tolerance = 0x0003;
 } // namespace Ids
 } // namespace Attributes
 } // namespace DissolvedOxygenConcentrationMeasurement
@@ -1019,10 +1020,10 @@ static constexpr AttributeId Tolerance        = 0x0003;
 namespace BromateConcentrationMeasurement {
 namespace Attributes {
 namespace Ids {
-static constexpr AttributeId MeasuredValue    = 0x0000;
+static constexpr AttributeId MeasuredValue = 0x0000;
 static constexpr AttributeId MinMeasuredValue = 0x0001;
 static constexpr AttributeId MaxMeasuredValue = 0x0002;
-static constexpr AttributeId Tolerance        = 0x0003;
+static constexpr AttributeId Tolerance = 0x0003;
 } // namespace Ids
 } // namespace Attributes
 } // namespace BromateConcentrationMeasurement
@@ -1030,10 +1031,10 @@ static constexpr AttributeId Tolerance        = 0x0003;
 namespace ChloraminesConcentrationMeasurement {
 namespace Attributes {
 namespace Ids {
-static constexpr AttributeId MeasuredValue    = 0x0000;
+static constexpr AttributeId MeasuredValue = 0x0000;
 static constexpr AttributeId MinMeasuredValue = 0x0001;
 static constexpr AttributeId MaxMeasuredValue = 0x0002;
-static constexpr AttributeId Tolerance        = 0x0003;
+static constexpr AttributeId Tolerance = 0x0003;
 } // namespace Ids
 } // namespace Attributes
 } // namespace ChloraminesConcentrationMeasurement
@@ -1041,10 +1042,10 @@ static constexpr AttributeId Tolerance        = 0x0003;
 namespace ChlorineConcentrationMeasurement {
 namespace Attributes {
 namespace Ids {
-static constexpr AttributeId MeasuredValue    = 0x0000;
+static constexpr AttributeId MeasuredValue = 0x0000;
 static constexpr AttributeId MinMeasuredValue = 0x0001;
 static constexpr AttributeId MaxMeasuredValue = 0x0002;
-static constexpr AttributeId Tolerance        = 0x0003;
+static constexpr AttributeId Tolerance = 0x0003;
 } // namespace Ids
 } // namespace Attributes
 } // namespace ChlorineConcentrationMeasurement
@@ -1052,10 +1053,10 @@ static constexpr AttributeId Tolerance        = 0x0003;
 namespace FecalColiformAndEColiConcentrationMeasurement {
 namespace Attributes {
 namespace Ids {
-static constexpr AttributeId MeasuredValue    = 0x0000;
+static constexpr AttributeId MeasuredValue = 0x0000;
 static constexpr AttributeId MinMeasuredValue = 0x0001;
 static constexpr AttributeId MaxMeasuredValue = 0x0002;
-static constexpr AttributeId Tolerance        = 0x0003;
+static constexpr AttributeId Tolerance = 0x0003;
 } // namespace Ids
 } // namespace Attributes
 } // namespace FecalColiformAndEColiConcentrationMeasurement
@@ -1063,10 +1064,10 @@ static constexpr AttributeId Tolerance        = 0x0003;
 namespace FluorideConcentrationMeasurement {
 namespace Attributes {
 namespace Ids {
-static constexpr AttributeId MeasuredValue    = 0x0000;
+static constexpr AttributeId MeasuredValue = 0x0000;
 static constexpr AttributeId MinMeasuredValue = 0x0001;
 static constexpr AttributeId MaxMeasuredValue = 0x0002;
-static constexpr AttributeId Tolerance        = 0x0003;
+static constexpr AttributeId Tolerance = 0x0003;
 } // namespace Ids
 } // namespace Attributes
 } // namespace FluorideConcentrationMeasurement
@@ -1074,10 +1075,10 @@ static constexpr AttributeId Tolerance        = 0x0003;
 namespace HaloaceticAcidsConcentrationMeasurement {
 namespace Attributes {
 namespace Ids {
-static constexpr AttributeId MeasuredValue    = 0x0000;
+static constexpr AttributeId MeasuredValue = 0x0000;
 static constexpr AttributeId MinMeasuredValue = 0x0001;
 static constexpr AttributeId MaxMeasuredValue = 0x0002;
-static constexpr AttributeId Tolerance        = 0x0003;
+static constexpr AttributeId Tolerance = 0x0003;
 } // namespace Ids
 } // namespace Attributes
 } // namespace HaloaceticAcidsConcentrationMeasurement
@@ -1085,10 +1086,10 @@ static constexpr AttributeId Tolerance        = 0x0003;
 namespace TotalTrihalomethanesConcentrationMeasurement {
 namespace Attributes {
 namespace Ids {
-static constexpr AttributeId MeasuredValue    = 0x0000;
+static constexpr AttributeId MeasuredValue = 0x0000;
 static constexpr AttributeId MinMeasuredValue = 0x0001;
 static constexpr AttributeId MaxMeasuredValue = 0x0002;
-static constexpr AttributeId Tolerance        = 0x0003;
+static constexpr AttributeId Tolerance = 0x0003;
 } // namespace Ids
 } // namespace Attributes
 } // namespace TotalTrihalomethanesConcentrationMeasurement
@@ -1096,10 +1097,10 @@ static constexpr AttributeId Tolerance        = 0x0003;
 namespace TotalColiformBacteriaConcentrationMeasurement {
 namespace Attributes {
 namespace Ids {
-static constexpr AttributeId MeasuredValue    = 0x0000;
+static constexpr AttributeId MeasuredValue = 0x0000;
 static constexpr AttributeId MinMeasuredValue = 0x0001;
 static constexpr AttributeId MaxMeasuredValue = 0x0002;
-static constexpr AttributeId Tolerance        = 0x0003;
+static constexpr AttributeId Tolerance = 0x0003;
 } // namespace Ids
 } // namespace Attributes
 } // namespace TotalColiformBacteriaConcentrationMeasurement
@@ -1107,10 +1108,10 @@ static constexpr AttributeId Tolerance        = 0x0003;
 namespace TurbidityConcentrationMeasurement {
 namespace Attributes {
 namespace Ids {
-static constexpr AttributeId MeasuredValue    = 0x0000;
+static constexpr AttributeId MeasuredValue = 0x0000;
 static constexpr AttributeId MinMeasuredValue = 0x0001;
 static constexpr AttributeId MaxMeasuredValue = 0x0002;
-static constexpr AttributeId Tolerance        = 0x0003;
+static constexpr AttributeId Tolerance = 0x0003;
 } // namespace Ids
 } // namespace Attributes
 } // namespace TurbidityConcentrationMeasurement
@@ -1118,10 +1119,10 @@ static constexpr AttributeId Tolerance        = 0x0003;
 namespace CopperConcentrationMeasurement {
 namespace Attributes {
 namespace Ids {
-static constexpr AttributeId MeasuredValue    = 0x0000;
+static constexpr AttributeId MeasuredValue = 0x0000;
 static constexpr AttributeId MinMeasuredValue = 0x0001;
 static constexpr AttributeId MaxMeasuredValue = 0x0002;
-static constexpr AttributeId Tolerance        = 0x0003;
+static constexpr AttributeId Tolerance = 0x0003;
 } // namespace Ids
 } // namespace Attributes
 } // namespace CopperConcentrationMeasurement
@@ -1129,10 +1130,10 @@ static constexpr AttributeId Tolerance        = 0x0003;
 namespace LeadConcentrationMeasurement {
 namespace Attributes {
 namespace Ids {
-static constexpr AttributeId MeasuredValue    = 0x0000;
+static constexpr AttributeId MeasuredValue = 0x0000;
 static constexpr AttributeId MinMeasuredValue = 0x0001;
 static constexpr AttributeId MaxMeasuredValue = 0x0002;
-static constexpr AttributeId Tolerance        = 0x0003;
+static constexpr AttributeId Tolerance = 0x0003;
 } // namespace Ids
 } // namespace Attributes
 } // namespace LeadConcentrationMeasurement
@@ -1140,10 +1141,10 @@ static constexpr AttributeId Tolerance        = 0x0003;
 namespace ManganeseConcentrationMeasurement {
 namespace Attributes {
 namespace Ids {
-static constexpr AttributeId MeasuredValue    = 0x0000;
+static constexpr AttributeId MeasuredValue = 0x0000;
 static constexpr AttributeId MinMeasuredValue = 0x0001;
 static constexpr AttributeId MaxMeasuredValue = 0x0002;
-static constexpr AttributeId Tolerance        = 0x0003;
+static constexpr AttributeId Tolerance = 0x0003;
 } // namespace Ids
 } // namespace Attributes
 } // namespace ManganeseConcentrationMeasurement
@@ -1151,10 +1152,10 @@ static constexpr AttributeId Tolerance        = 0x0003;
 namespace SulfateConcentrationMeasurement {
 namespace Attributes {
 namespace Ids {
-static constexpr AttributeId MeasuredValue    = 0x0000;
+static constexpr AttributeId MeasuredValue = 0x0000;
 static constexpr AttributeId MinMeasuredValue = 0x0001;
 static constexpr AttributeId MaxMeasuredValue = 0x0002;
-static constexpr AttributeId Tolerance        = 0x0003;
+static constexpr AttributeId Tolerance = 0x0003;
 } // namespace Ids
 } // namespace Attributes
 } // namespace SulfateConcentrationMeasurement
@@ -1162,10 +1163,10 @@ static constexpr AttributeId Tolerance        = 0x0003;
 namespace BromodichloromethaneConcentrationMeasurement {
 namespace Attributes {
 namespace Ids {
-static constexpr AttributeId MeasuredValue    = 0x0000;
+static constexpr AttributeId MeasuredValue = 0x0000;
 static constexpr AttributeId MinMeasuredValue = 0x0001;
 static constexpr AttributeId MaxMeasuredValue = 0x0002;
-static constexpr AttributeId Tolerance        = 0x0003;
+static constexpr AttributeId Tolerance = 0x0003;
 } // namespace Ids
 } // namespace Attributes
 } // namespace BromodichloromethaneConcentrationMeasurement
@@ -1173,10 +1174,10 @@ static constexpr AttributeId Tolerance        = 0x0003;
 namespace BromoformConcentrationMeasurement {
 namespace Attributes {
 namespace Ids {
-static constexpr AttributeId MeasuredValue    = 0x0000;
+static constexpr AttributeId MeasuredValue = 0x0000;
 static constexpr AttributeId MinMeasuredValue = 0x0001;
 static constexpr AttributeId MaxMeasuredValue = 0x0002;
-static constexpr AttributeId Tolerance        = 0x0003;
+static constexpr AttributeId Tolerance = 0x0003;
 } // namespace Ids
 } // namespace Attributes
 } // namespace BromoformConcentrationMeasurement
@@ -1184,10 +1185,10 @@ static constexpr AttributeId Tolerance        = 0x0003;
 namespace ChlorodibromomethaneConcentrationMeasurement {
 namespace Attributes {
 namespace Ids {
-static constexpr AttributeId MeasuredValue    = 0x0000;
+static constexpr AttributeId MeasuredValue = 0x0000;
 static constexpr AttributeId MinMeasuredValue = 0x0001;
 static constexpr AttributeId MaxMeasuredValue = 0x0002;
-static constexpr AttributeId Tolerance        = 0x0003;
+static constexpr AttributeId Tolerance = 0x0003;
 } // namespace Ids
 } // namespace Attributes
 } // namespace ChlorodibromomethaneConcentrationMeasurement
@@ -1195,10 +1196,10 @@ static constexpr AttributeId Tolerance        = 0x0003;
 namespace ChloroformConcentrationMeasurement {
 namespace Attributes {
 namespace Ids {
-static constexpr AttributeId MeasuredValue    = 0x0000;
+static constexpr AttributeId MeasuredValue = 0x0000;
 static constexpr AttributeId MinMeasuredValue = 0x0001;
 static constexpr AttributeId MaxMeasuredValue = 0x0002;
-static constexpr AttributeId Tolerance        = 0x0003;
+static constexpr AttributeId Tolerance = 0x0003;
 } // namespace Ids
 } // namespace Attributes
 } // namespace ChloroformConcentrationMeasurement
@@ -1206,10 +1207,10 @@ static constexpr AttributeId Tolerance        = 0x0003;
 namespace SodiumConcentrationMeasurement {
 namespace Attributes {
 namespace Ids {
-static constexpr AttributeId MeasuredValue    = 0x0000;
+static constexpr AttributeId MeasuredValue = 0x0000;
 static constexpr AttributeId MinMeasuredValue = 0x0001;
 static constexpr AttributeId MaxMeasuredValue = 0x0002;
-static constexpr AttributeId Tolerance        = 0x0003;
+static constexpr AttributeId Tolerance = 0x0003;
 } // namespace Ids
 } // namespace Attributes
 } // namespace SodiumConcentrationMeasurement
@@ -1217,13 +1218,13 @@ static constexpr AttributeId Tolerance        = 0x0003;
 namespace IasZone {
 namespace Attributes {
 namespace Ids {
-static constexpr AttributeId ZoneState                              = 0x0000;
-static constexpr AttributeId ZoneType                               = 0x0001;
-static constexpr AttributeId ZoneStatus                             = 0x0002;
-static constexpr AttributeId IasCieAddress                          = 0x0010;
-static constexpr AttributeId ZoneId                                 = 0x0011;
+static constexpr AttributeId ZoneState = 0x0000;
+static constexpr AttributeId ZoneType = 0x0001;
+static constexpr AttributeId ZoneStatus = 0x0002;
+static constexpr AttributeId IasCieAddress = 0x0010;
+static constexpr AttributeId ZoneId = 0x0011;
 static constexpr AttributeId NumberOfZoneSensitivityLevelsSupported = 0x0012;
-static constexpr AttributeId CurrentZoneSensitivityLevel            = 0x0013;
+static constexpr AttributeId CurrentZoneSensitivityLevel = 0x0013;
 } // namespace Ids
 } // namespace Attributes
 } // namespace IasZone
@@ -1247,8 +1248,8 @@ static constexpr AttributeId WakeOnLanMacAddress = 0x0000;
 namespace TvChannel {
 namespace Attributes {
 namespace Ids {
-static constexpr AttributeId TvChannelList    = 0x0000;
-static constexpr AttributeId TvChannelLineup  = 0x0001;
+static constexpr AttributeId TvChannelList = 0x0000;
+static constexpr AttributeId TvChannelLineup = 0x0001;
 static constexpr AttributeId CurrentTvChannel = 0x0002;
 } // namespace Ids
 } // namespace Attributes
@@ -1257,7 +1258,7 @@ static constexpr AttributeId CurrentTvChannel = 0x0002;
 namespace TargetNavigator {
 namespace Attributes {
 namespace Ids {
-static constexpr AttributeId TargetNavigatorList    = 0x0000;
+static constexpr AttributeId TargetNavigatorList = 0x0000;
 static constexpr AttributeId CurrentNavigatorTarget = 0x0001;
 } // namespace Ids
 } // namespace Attributes
@@ -1266,13 +1267,13 @@ static constexpr AttributeId CurrentNavigatorTarget = 0x0001;
 namespace MediaPlayback {
 namespace Attributes {
 namespace Ids {
-static constexpr AttributeId PlaybackState  = 0x0000;
-static constexpr AttributeId StartTime      = 0x0001;
-static constexpr AttributeId Duration       = 0x0002;
-static constexpr AttributeId UpdatedAt      = 0x0003;
-static constexpr AttributeId Posistion      = 0x0004;
-static constexpr AttributeId PlaybackSpeed  = 0x0005;
-static constexpr AttributeId SeekRangeEnd   = 0x0006;
+static constexpr AttributeId PlaybackState = 0x0000;
+static constexpr AttributeId StartTime = 0x0001;
+static constexpr AttributeId Duration = 0x0002;
+static constexpr AttributeId UpdatedAt = 0x0003;
+static constexpr AttributeId Posistion = 0x0004;
+static constexpr AttributeId PlaybackSpeed = 0x0005;
+static constexpr AttributeId SeekRangeEnd = 0x0006;
 static constexpr AttributeId SeekRangeStart = 0x0007;
 } // namespace Ids
 } // namespace Attributes
@@ -1281,7 +1282,7 @@ static constexpr AttributeId SeekRangeStart = 0x0007;
 namespace MediaInput {
 namespace Attributes {
 namespace Ids {
-static constexpr AttributeId MediaInputList    = 0x0000;
+static constexpr AttributeId MediaInputList = 0x0000;
 static constexpr AttributeId CurrentMediaInput = 0x0001;
 } // namespace Ids
 } // namespace Attributes
@@ -1290,7 +1291,7 @@ static constexpr AttributeId CurrentMediaInput = 0x0001;
 namespace ContentLauncher {
 namespace Attributes {
 namespace Ids {
-static constexpr AttributeId AcceptsHeaderList       = 0x0000;
+static constexpr AttributeId AcceptsHeaderList = 0x0000;
 static constexpr AttributeId SupportedStreamingTypes = 0x0001;
 } // namespace Ids
 } // namespace Attributes
@@ -1299,7 +1300,7 @@ static constexpr AttributeId SupportedStreamingTypes = 0x0001;
 namespace AudioOutput {
 namespace Attributes {
 namespace Ids {
-static constexpr AttributeId AudioOutputList    = 0x0000;
+static constexpr AttributeId AudioOutputList = 0x0000;
 static constexpr AttributeId CurrentAudioOutput = 0x0001;
 } // namespace Ids
 } // namespace Attributes
@@ -1309,8 +1310,8 @@ namespace ApplicationLauncher {
 namespace Attributes {
 namespace Ids {
 static constexpr AttributeId ApplicationLauncherList = 0x0000;
-static constexpr AttributeId CatalogVendorId         = 0x0001;
-static constexpr AttributeId ApplicationId           = 0x0002;
+static constexpr AttributeId CatalogVendorId = 0x0001;
+static constexpr AttributeId ApplicationId = 0x0002;
 } // namespace Ids
 } // namespace Attributes
 } // namespace ApplicationLauncher
@@ -1318,12 +1319,12 @@ static constexpr AttributeId ApplicationId           = 0x0002;
 namespace ApplicationBasic {
 namespace Attributes {
 namespace Ids {
-static constexpr AttributeId VendorName        = 0x0000;
-static constexpr AttributeId VendorId          = 0x0001;
-static constexpr AttributeId ApplicationName   = 0x0002;
-static constexpr AttributeId ProductId         = 0x0003;
-static constexpr AttributeId ApplicationId     = 0x0005;
-static constexpr AttributeId CatalogVendorId   = 0x0006;
+static constexpr AttributeId VendorName = 0x0000;
+static constexpr AttributeId VendorId = 0x0001;
+static constexpr AttributeId ApplicationName = 0x0002;
+static constexpr AttributeId ProductId = 0x0003;
+static constexpr AttributeId ApplicationId = 0x0005;
+static constexpr AttributeId CatalogVendorId = 0x0006;
 static constexpr AttributeId ApplicationStatus = 0x0007;
 } // namespace Ids
 } // namespace Attributes
@@ -1332,27 +1333,27 @@ static constexpr AttributeId ApplicationStatus = 0x0007;
 namespace TestCluster {
 namespace Attributes {
 namespace Ids {
-static constexpr AttributeId Boolean               = 0x0000;
-static constexpr AttributeId Bitmap8               = 0x0001;
-static constexpr AttributeId Bitmap16              = 0x0002;
-static constexpr AttributeId Bitmap32              = 0x0003;
-static constexpr AttributeId Bitmap64              = 0x0004;
-static constexpr AttributeId Int8u                 = 0x0005;
-static constexpr AttributeId Int16u                = 0x0006;
-static constexpr AttributeId Int32u                = 0x0008;
-static constexpr AttributeId Int64u                = 0x000C;
-static constexpr AttributeId Int8s                 = 0x000D;
-static constexpr AttributeId Int16s                = 0x000E;
-static constexpr AttributeId Int32s                = 0x0010;
-static constexpr AttributeId Int64s                = 0x0014;
-static constexpr AttributeId Enum8                 = 0x0015;
-static constexpr AttributeId Enum16                = 0x0016;
-static constexpr AttributeId OctetString           = 0x0019;
-static constexpr AttributeId ListInt8u             = 0x001A;
-static constexpr AttributeId ListOctetString       = 0x001B;
+static constexpr AttributeId Boolean = 0x0000;
+static constexpr AttributeId Bitmap8 = 0x0001;
+static constexpr AttributeId Bitmap16 = 0x0002;
+static constexpr AttributeId Bitmap32 = 0x0003;
+static constexpr AttributeId Bitmap64 = 0x0004;
+static constexpr AttributeId Int8u = 0x0005;
+static constexpr AttributeId Int16u = 0x0006;
+static constexpr AttributeId Int32u = 0x0008;
+static constexpr AttributeId Int64u = 0x000C;
+static constexpr AttributeId Int8s = 0x000D;
+static constexpr AttributeId Int16s = 0x000E;
+static constexpr AttributeId Int32s = 0x0010;
+static constexpr AttributeId Int64s = 0x0014;
+static constexpr AttributeId Enum8 = 0x0015;
+static constexpr AttributeId Enum16 = 0x0016;
+static constexpr AttributeId OctetString = 0x0019;
+static constexpr AttributeId ListInt8u = 0x001A;
+static constexpr AttributeId ListOctetString = 0x001B;
 static constexpr AttributeId ListStructOctetString = 0x001C;
-static constexpr AttributeId LongOctetString       = 0x001D;
-static constexpr AttributeId Unsupported           = 0x00FF;
+static constexpr AttributeId LongOctetString = 0x001D;
+static constexpr AttributeId Unsupported = 0x00FF;
 } // namespace Ids
 } // namespace Attributes
 } // namespace TestCluster
@@ -1360,17 +1361,17 @@ static constexpr AttributeId Unsupported           = 0x00FF;
 namespace ApplianceIdentification {
 namespace Attributes {
 namespace Ids {
-static constexpr AttributeId BasicIdentification       = 0x0000;
-static constexpr AttributeId CompanyName               = 0x0010;
-static constexpr AttributeId CompanyId                 = 0x0011;
-static constexpr AttributeId BrandName                 = 0x0012;
-static constexpr AttributeId BrandId                   = 0x0013;
-static constexpr AttributeId Model                     = 0x0014;
-static constexpr AttributeId PartNumber                = 0x0015;
-static constexpr AttributeId ProductRevision           = 0x0016;
-static constexpr AttributeId SoftwareRevision          = 0x0017;
-static constexpr AttributeId ProductTypeName           = 0x0018;
-static constexpr AttributeId ProductTypeId             = 0x0019;
+static constexpr AttributeId BasicIdentification = 0x0000;
+static constexpr AttributeId CompanyName = 0x0010;
+static constexpr AttributeId CompanyId = 0x0011;
+static constexpr AttributeId BrandName = 0x0012;
+static constexpr AttributeId BrandId = 0x0013;
+static constexpr AttributeId Model = 0x0014;
+static constexpr AttributeId PartNumber = 0x0015;
+static constexpr AttributeId ProductRevision = 0x0016;
+static constexpr AttributeId SoftwareRevision = 0x0017;
+static constexpr AttributeId ProductTypeName = 0x0018;
+static constexpr AttributeId ProductTypeId = 0x0019;
 static constexpr AttributeId CecedSpecificationVersion = 0x001A;
 } // namespace Ids
 } // namespace Attributes
@@ -1379,18 +1380,18 @@ static constexpr AttributeId CecedSpecificationVersion = 0x001A;
 namespace MeterIdentification {
 namespace Attributes {
 namespace Ids {
-static constexpr AttributeId CompanyName      = 0x0000;
-static constexpr AttributeId MeterTypeId      = 0x0001;
-static constexpr AttributeId DataQualityId    = 0x0004;
-static constexpr AttributeId CustomerName     = 0x0005;
-static constexpr AttributeId Model            = 0x0006;
-static constexpr AttributeId PartNumber       = 0x0007;
-static constexpr AttributeId ProductRevision  = 0x0008;
+static constexpr AttributeId CompanyName = 0x0000;
+static constexpr AttributeId MeterTypeId = 0x0001;
+static constexpr AttributeId DataQualityId = 0x0004;
+static constexpr AttributeId CustomerName = 0x0005;
+static constexpr AttributeId Model = 0x0006;
+static constexpr AttributeId PartNumber = 0x0007;
+static constexpr AttributeId ProductRevision = 0x0008;
 static constexpr AttributeId SoftwareRevision = 0x000A;
-static constexpr AttributeId UtilityName      = 0x000B;
-static constexpr AttributeId Pod              = 0x000C;
-static constexpr AttributeId AvailablePower   = 0x000D;
-static constexpr AttributeId PowerThreshold   = 0x000E;
+static constexpr AttributeId UtilityName = 0x000B;
+static constexpr AttributeId Pod = 0x000C;
+static constexpr AttributeId AvailablePower = 0x000D;
+static constexpr AttributeId PowerThreshold = 0x000E;
 } // namespace Ids
 } // namespace Attributes
 } // namespace MeterIdentification
@@ -1398,7 +1399,7 @@ static constexpr AttributeId PowerThreshold   = 0x000E;
 namespace ApplianceStatistics {
 namespace Attributes {
 namespace Ids {
-static constexpr AttributeId LogMaxSize      = 0x0000;
+static constexpr AttributeId LogMaxSize = 0x0000;
 static constexpr AttributeId LogQueueMaxSize = 0x0001;
 } // namespace Ids
 } // namespace Attributes
@@ -1407,134 +1408,134 @@ static constexpr AttributeId LogQueueMaxSize = 0x0001;
 namespace ElectricalMeasurement {
 namespace Attributes {
 namespace Ids {
-static constexpr AttributeId MeasurementType                          = 0x0000;
-static constexpr AttributeId DcVoltage                                = 0x0100;
-static constexpr AttributeId DcVoltageMin                             = 0x0101;
-static constexpr AttributeId DcVoltageMax                             = 0x0102;
-static constexpr AttributeId DcCurrent                                = 0x0103;
-static constexpr AttributeId DcCurrentMin                             = 0x0104;
-static constexpr AttributeId DcCurrentMax                             = 0x0105;
-static constexpr AttributeId DcPower                                  = 0x0106;
-static constexpr AttributeId DcPowerMin                               = 0x0107;
-static constexpr AttributeId DcPowerMax                               = 0x0108;
-static constexpr AttributeId DcVoltageMultiplier                      = 0x0200;
-static constexpr AttributeId DcVoltageDivisor                         = 0x0201;
-static constexpr AttributeId DcCurrentMultiplier                      = 0x0202;
-static constexpr AttributeId DcCurrentDivisor                         = 0x0203;
-static constexpr AttributeId DcPowerMultiplier                        = 0x0204;
-static constexpr AttributeId DcPowerDivisor                           = 0x0205;
-static constexpr AttributeId AcFrequency                              = 0x0300;
-static constexpr AttributeId AcFrequencyMin                           = 0x0301;
-static constexpr AttributeId AcFrequencyMax                           = 0x0302;
-static constexpr AttributeId NeutralCurrent                           = 0x0303;
-static constexpr AttributeId TotalActivePower                         = 0x0304;
-static constexpr AttributeId TotalReactivePower                       = 0x0305;
-static constexpr AttributeId TotalApparentPower                       = 0x0306;
-static constexpr AttributeId Measured1stHarmonicCurrent               = 0x0307;
-static constexpr AttributeId Measured3rdHarmonicCurrent               = 0x0308;
-static constexpr AttributeId Measured5thHarmonicCurrent               = 0x0309;
-static constexpr AttributeId Measured7thHarmonicCurrent               = 0x030A;
-static constexpr AttributeId Measured9thHarmonicCurrent               = 0x030B;
-static constexpr AttributeId Measured11thHarmonicCurrent              = 0x030C;
-static constexpr AttributeId MeasuredPhase1stHarmonicCurrent          = 0x030D;
-static constexpr AttributeId MeasuredPhase3rdHarmonicCurrent          = 0x030E;
-static constexpr AttributeId MeasuredPhase5thHarmonicCurrent          = 0x030F;
-static constexpr AttributeId MeasuredPhase7thHarmonicCurrent          = 0x0310;
-static constexpr AttributeId MeasuredPhase9thHarmonicCurrent          = 0x0311;
-static constexpr AttributeId MeasuredPhase11thHarmonicCurrent         = 0x0312;
-static constexpr AttributeId AcFrequencyMultiplier                    = 0x0400;
-static constexpr AttributeId AcFrequencyDivisor                       = 0x0401;
-static constexpr AttributeId PowerMultiplier                          = 0x0402;
-static constexpr AttributeId PowerDivisor                             = 0x0403;
-static constexpr AttributeId HarmonicCurrentMultiplier                = 0x0404;
-static constexpr AttributeId PhaseHarmonicCurrentMultiplier           = 0x0405;
-static constexpr AttributeId InstantaneousVoltage                     = 0x0500;
-static constexpr AttributeId InstantaneousLineCurrent                 = 0x0501;
-static constexpr AttributeId InstantaneousActiveCurrent               = 0x0502;
-static constexpr AttributeId InstantaneousReactiveCurrent             = 0x0503;
-static constexpr AttributeId InstantaneousPower                       = 0x0504;
-static constexpr AttributeId RmsVoltage                               = 0x0505;
-static constexpr AttributeId RmsVoltageMin                            = 0x0506;
-static constexpr AttributeId RmsVoltageMax                            = 0x0507;
-static constexpr AttributeId RmsCurrent                               = 0x0508;
-static constexpr AttributeId RmsCurrentMin                            = 0x0509;
-static constexpr AttributeId RmsCurrentMax                            = 0x050A;
-static constexpr AttributeId ActivePower                              = 0x050B;
-static constexpr AttributeId ActivePowerMin                           = 0x050C;
-static constexpr AttributeId ActivePowerMax                           = 0x050D;
-static constexpr AttributeId ReactivePower                            = 0x050E;
-static constexpr AttributeId ApparentPower                            = 0x050F;
-static constexpr AttributeId PowerFactor                              = 0x0510;
-static constexpr AttributeId AverageRmsVoltageMeasurementPeriod       = 0x0511;
-static constexpr AttributeId AverageRmsUnderVoltageCounter            = 0x0513;
-static constexpr AttributeId RmsExtremeOverVoltagePeriod              = 0x0514;
-static constexpr AttributeId RmsExtremeUnderVoltagePeriod             = 0x0515;
-static constexpr AttributeId RmsVoltageSagPeriod                      = 0x0516;
-static constexpr AttributeId RmsVoltageSwellPeriod                    = 0x0517;
-static constexpr AttributeId AcVoltageMultiplier                      = 0x0600;
-static constexpr AttributeId AcVoltageDivisor                         = 0x0601;
-static constexpr AttributeId AcCurrentMultiplier                      = 0x0602;
-static constexpr AttributeId AcCurrentDivisor                         = 0x0603;
-static constexpr AttributeId AcPowerMultiplier                        = 0x0604;
-static constexpr AttributeId AcPowerDivisor                           = 0x0605;
-static constexpr AttributeId OverloadAlarmsMask                       = 0x0700;
-static constexpr AttributeId VoltageOverload                          = 0x0701;
-static constexpr AttributeId CurrentOverload                          = 0x0702;
-static constexpr AttributeId AcOverloadAlarmsMask                     = 0x0800;
-static constexpr AttributeId AcVoltageOverload                        = 0x0801;
-static constexpr AttributeId AcCurrentOverload                        = 0x0802;
-static constexpr AttributeId AcActivePowerOverload                    = 0x0803;
-static constexpr AttributeId AcReactivePowerOverload                  = 0x0804;
-static constexpr AttributeId AverageRmsOverVoltage                    = 0x0805;
-static constexpr AttributeId AverageRmsUnderVoltage                   = 0x0806;
-static constexpr AttributeId RmsExtremeOverVoltage                    = 0x0807;
-static constexpr AttributeId RmsExtremeUnderVoltage                   = 0x0808;
-static constexpr AttributeId RmsVoltageSag                            = 0x0809;
-static constexpr AttributeId RmsVoltageSwell                          = 0x080A;
-static constexpr AttributeId LineCurrentPhaseB                        = 0x0901;
-static constexpr AttributeId ActiveCurrentPhaseB                      = 0x0902;
-static constexpr AttributeId ReactiveCurrentPhaseB                    = 0x0903;
-static constexpr AttributeId RmsVoltagePhaseB                         = 0x0905;
-static constexpr AttributeId RmsVoltageMinPhaseB                      = 0x0906;
-static constexpr AttributeId RmsVoltageMaxPhaseB                      = 0x0907;
-static constexpr AttributeId RmsCurrentPhaseB                         = 0x0908;
-static constexpr AttributeId RmsCurrentMinPhaseB                      = 0x0909;
-static constexpr AttributeId RmsCurrentMaxPhaseB                      = 0x090A;
-static constexpr AttributeId ActivePowerPhaseB                        = 0x090B;
-static constexpr AttributeId ActivePowerMinPhaseB                     = 0x090C;
-static constexpr AttributeId ActivePowerMaxPhaseB                     = 0x090D;
-static constexpr AttributeId ReactivePowerPhaseB                      = 0x090E;
-static constexpr AttributeId ApparentPowerPhaseB                      = 0x090F;
-static constexpr AttributeId PowerFactorPhaseB                        = 0x0910;
+static constexpr AttributeId MeasurementType = 0x0000;
+static constexpr AttributeId DcVoltage = 0x0100;
+static constexpr AttributeId DcVoltageMin = 0x0101;
+static constexpr AttributeId DcVoltageMax = 0x0102;
+static constexpr AttributeId DcCurrent = 0x0103;
+static constexpr AttributeId DcCurrentMin = 0x0104;
+static constexpr AttributeId DcCurrentMax = 0x0105;
+static constexpr AttributeId DcPower = 0x0106;
+static constexpr AttributeId DcPowerMin = 0x0107;
+static constexpr AttributeId DcPowerMax = 0x0108;
+static constexpr AttributeId DcVoltageMultiplier = 0x0200;
+static constexpr AttributeId DcVoltageDivisor = 0x0201;
+static constexpr AttributeId DcCurrentMultiplier = 0x0202;
+static constexpr AttributeId DcCurrentDivisor = 0x0203;
+static constexpr AttributeId DcPowerMultiplier = 0x0204;
+static constexpr AttributeId DcPowerDivisor = 0x0205;
+static constexpr AttributeId AcFrequency = 0x0300;
+static constexpr AttributeId AcFrequencyMin = 0x0301;
+static constexpr AttributeId AcFrequencyMax = 0x0302;
+static constexpr AttributeId NeutralCurrent = 0x0303;
+static constexpr AttributeId TotalActivePower = 0x0304;
+static constexpr AttributeId TotalReactivePower = 0x0305;
+static constexpr AttributeId TotalApparentPower = 0x0306;
+static constexpr AttributeId Measured1stHarmonicCurrent = 0x0307;
+static constexpr AttributeId Measured3rdHarmonicCurrent = 0x0308;
+static constexpr AttributeId Measured5thHarmonicCurrent = 0x0309;
+static constexpr AttributeId Measured7thHarmonicCurrent = 0x030A;
+static constexpr AttributeId Measured9thHarmonicCurrent = 0x030B;
+static constexpr AttributeId Measured11thHarmonicCurrent = 0x030C;
+static constexpr AttributeId MeasuredPhase1stHarmonicCurrent = 0x030D;
+static constexpr AttributeId MeasuredPhase3rdHarmonicCurrent = 0x030E;
+static constexpr AttributeId MeasuredPhase5thHarmonicCurrent = 0x030F;
+static constexpr AttributeId MeasuredPhase7thHarmonicCurrent = 0x0310;
+static constexpr AttributeId MeasuredPhase9thHarmonicCurrent = 0x0311;
+static constexpr AttributeId MeasuredPhase11thHarmonicCurrent = 0x0312;
+static constexpr AttributeId AcFrequencyMultiplier = 0x0400;
+static constexpr AttributeId AcFrequencyDivisor = 0x0401;
+static constexpr AttributeId PowerMultiplier = 0x0402;
+static constexpr AttributeId PowerDivisor = 0x0403;
+static constexpr AttributeId HarmonicCurrentMultiplier = 0x0404;
+static constexpr AttributeId PhaseHarmonicCurrentMultiplier = 0x0405;
+static constexpr AttributeId InstantaneousVoltage = 0x0500;
+static constexpr AttributeId InstantaneousLineCurrent = 0x0501;
+static constexpr AttributeId InstantaneousActiveCurrent = 0x0502;
+static constexpr AttributeId InstantaneousReactiveCurrent = 0x0503;
+static constexpr AttributeId InstantaneousPower = 0x0504;
+static constexpr AttributeId RmsVoltage = 0x0505;
+static constexpr AttributeId RmsVoltageMin = 0x0506;
+static constexpr AttributeId RmsVoltageMax = 0x0507;
+static constexpr AttributeId RmsCurrent = 0x0508;
+static constexpr AttributeId RmsCurrentMin = 0x0509;
+static constexpr AttributeId RmsCurrentMax = 0x050A;
+static constexpr AttributeId ActivePower = 0x050B;
+static constexpr AttributeId ActivePowerMin = 0x050C;
+static constexpr AttributeId ActivePowerMax = 0x050D;
+static constexpr AttributeId ReactivePower = 0x050E;
+static constexpr AttributeId ApparentPower = 0x050F;
+static constexpr AttributeId PowerFactor = 0x0510;
+static constexpr AttributeId AverageRmsVoltageMeasurementPeriod = 0x0511;
+static constexpr AttributeId AverageRmsUnderVoltageCounter = 0x0513;
+static constexpr AttributeId RmsExtremeOverVoltagePeriod = 0x0514;
+static constexpr AttributeId RmsExtremeUnderVoltagePeriod = 0x0515;
+static constexpr AttributeId RmsVoltageSagPeriod = 0x0516;
+static constexpr AttributeId RmsVoltageSwellPeriod = 0x0517;
+static constexpr AttributeId AcVoltageMultiplier = 0x0600;
+static constexpr AttributeId AcVoltageDivisor = 0x0601;
+static constexpr AttributeId AcCurrentMultiplier = 0x0602;
+static constexpr AttributeId AcCurrentDivisor = 0x0603;
+static constexpr AttributeId AcPowerMultiplier = 0x0604;
+static constexpr AttributeId AcPowerDivisor = 0x0605;
+static constexpr AttributeId OverloadAlarmsMask = 0x0700;
+static constexpr AttributeId VoltageOverload = 0x0701;
+static constexpr AttributeId CurrentOverload = 0x0702;
+static constexpr AttributeId AcOverloadAlarmsMask = 0x0800;
+static constexpr AttributeId AcVoltageOverload = 0x0801;
+static constexpr AttributeId AcCurrentOverload = 0x0802;
+static constexpr AttributeId AcActivePowerOverload = 0x0803;
+static constexpr AttributeId AcReactivePowerOverload = 0x0804;
+static constexpr AttributeId AverageRmsOverVoltage = 0x0805;
+static constexpr AttributeId AverageRmsUnderVoltage = 0x0806;
+static constexpr AttributeId RmsExtremeOverVoltage = 0x0807;
+static constexpr AttributeId RmsExtremeUnderVoltage = 0x0808;
+static constexpr AttributeId RmsVoltageSag = 0x0809;
+static constexpr AttributeId RmsVoltageSwell = 0x080A;
+static constexpr AttributeId LineCurrentPhaseB = 0x0901;
+static constexpr AttributeId ActiveCurrentPhaseB = 0x0902;
+static constexpr AttributeId ReactiveCurrentPhaseB = 0x0903;
+static constexpr AttributeId RmsVoltagePhaseB = 0x0905;
+static constexpr AttributeId RmsVoltageMinPhaseB = 0x0906;
+static constexpr AttributeId RmsVoltageMaxPhaseB = 0x0907;
+static constexpr AttributeId RmsCurrentPhaseB = 0x0908;
+static constexpr AttributeId RmsCurrentMinPhaseB = 0x0909;
+static constexpr AttributeId RmsCurrentMaxPhaseB = 0x090A;
+static constexpr AttributeId ActivePowerPhaseB = 0x090B;
+static constexpr AttributeId ActivePowerMinPhaseB = 0x090C;
+static constexpr AttributeId ActivePowerMaxPhaseB = 0x090D;
+static constexpr AttributeId ReactivePowerPhaseB = 0x090E;
+static constexpr AttributeId ApparentPowerPhaseB = 0x090F;
+static constexpr AttributeId PowerFactorPhaseB = 0x0910;
 static constexpr AttributeId AverageRmsVoltageMeasurementPeriodPhaseB = 0x0911;
-static constexpr AttributeId AverageRmsOverVoltageCounterPhaseB       = 0x0912;
-static constexpr AttributeId AverageRmsUnderVoltageCounterPhaseB      = 0x0913;
-static constexpr AttributeId RmsExtremeOverVoltagePeriodPhaseB        = 0x0914;
-static constexpr AttributeId RmsExtremeUnderVoltagePeriodPhaseB       = 0x0915;
-static constexpr AttributeId RmsVoltageSagPeriodPhaseB                = 0x0916;
-static constexpr AttributeId RmsVoltageSwellPeriodPhaseB              = 0x0917;
-static constexpr AttributeId LineCurrentPhaseC                        = 0x0A01;
-static constexpr AttributeId ActiveCurrentPhaseC                      = 0x0A02;
-static constexpr AttributeId ReactiveCurrentPhaseC                    = 0x0A03;
-static constexpr AttributeId RmsVoltagePhaseC                         = 0x0A05;
-static constexpr AttributeId RmsVoltageMinPhaseC                      = 0x0A06;
-static constexpr AttributeId RmsVoltageMaxPhaseC                      = 0x0A07;
-static constexpr AttributeId RmsCurrentPhaseC                         = 0x0A08;
-static constexpr AttributeId RmsCurrentMinPhaseC                      = 0x0A09;
-static constexpr AttributeId RmsCurrentMaxPhaseC                      = 0x0A0A;
-static constexpr AttributeId ActivePowerPhaseC                        = 0x0A0B;
-static constexpr AttributeId ActivePowerMinPhaseC                     = 0x0A0C;
-static constexpr AttributeId ActivePowerMaxPhaseC                     = 0x0A0D;
-static constexpr AttributeId ReactivePowerPhaseC                      = 0x0A0E;
-static constexpr AttributeId ApparentPowerPhaseC                      = 0x0A0F;
-static constexpr AttributeId PowerFactorPhaseC                        = 0x0A10;
+static constexpr AttributeId AverageRmsOverVoltageCounterPhaseB = 0x0912;
+static constexpr AttributeId AverageRmsUnderVoltageCounterPhaseB = 0x0913;
+static constexpr AttributeId RmsExtremeOverVoltagePeriodPhaseB = 0x0914;
+static constexpr AttributeId RmsExtremeUnderVoltagePeriodPhaseB = 0x0915;
+static constexpr AttributeId RmsVoltageSagPeriodPhaseB = 0x0916;
+static constexpr AttributeId RmsVoltageSwellPeriodPhaseB = 0x0917;
+static constexpr AttributeId LineCurrentPhaseC = 0x0A01;
+static constexpr AttributeId ActiveCurrentPhaseC = 0x0A02;
+static constexpr AttributeId ReactiveCurrentPhaseC = 0x0A03;
+static constexpr AttributeId RmsVoltagePhaseC = 0x0A05;
+static constexpr AttributeId RmsVoltageMinPhaseC = 0x0A06;
+static constexpr AttributeId RmsVoltageMaxPhaseC = 0x0A07;
+static constexpr AttributeId RmsCurrentPhaseC = 0x0A08;
+static constexpr AttributeId RmsCurrentMinPhaseC = 0x0A09;
+static constexpr AttributeId RmsCurrentMaxPhaseC = 0x0A0A;
+static constexpr AttributeId ActivePowerPhaseC = 0x0A0B;
+static constexpr AttributeId ActivePowerMinPhaseC = 0x0A0C;
+static constexpr AttributeId ActivePowerMaxPhaseC = 0x0A0D;
+static constexpr AttributeId ReactivePowerPhaseC = 0x0A0E;
+static constexpr AttributeId ApparentPowerPhaseC = 0x0A0F;
+static constexpr AttributeId PowerFactorPhaseC = 0x0A10;
 static constexpr AttributeId AverageRmsVoltageMeasurementPeriodPhaseC = 0x0A11;
-static constexpr AttributeId AverageRmsOverVoltageCounterPhaseC       = 0x0A12;
-static constexpr AttributeId AverageRmsUnderVoltageCounterPhaseC      = 0x0A13;
-static constexpr AttributeId RmsExtremeOverVoltagePeriodPhaseC        = 0x0A14;
-static constexpr AttributeId RmsExtremeUnderVoltagePeriodPhaseC       = 0x0A15;
-static constexpr AttributeId RmsVoltageSagPeriodPhaseC                = 0x0A16;
-static constexpr AttributeId RmsVoltageSwellPeriodPhaseC              = 0x0A17;
+static constexpr AttributeId AverageRmsOverVoltageCounterPhaseC = 0x0A12;
+static constexpr AttributeId AverageRmsUnderVoltageCounterPhaseC = 0x0A13;
+static constexpr AttributeId RmsExtremeOverVoltagePeriodPhaseC = 0x0A14;
+static constexpr AttributeId RmsExtremeUnderVoltagePeriodPhaseC = 0x0A15;
+static constexpr AttributeId RmsVoltageSagPeriodPhaseC = 0x0A16;
+static constexpr AttributeId RmsVoltageSwellPeriodPhaseC = 0x0A17;
 } // namespace Ids
 } // namespace Attributes
 } // namespace ElectricalMeasurement
@@ -1542,7 +1543,7 @@ static constexpr AttributeId RmsVoltageSwellPeriodPhaseC              = 0x0A17;
 namespace GroupKeyManagement {
 namespace Attributes {
 namespace Ids {
-static constexpr AttributeId Groups    = 0x0000;
+static constexpr AttributeId Groups = 0x0000;
 static constexpr AttributeId GroupKeys = 0x0001;
 } // namespace Ids
 } // namespace Attributes
@@ -1551,7 +1552,7 @@ static constexpr AttributeId GroupKeys = 0x0001;
 namespace SampleMfgSpecificCluster {
 namespace Attributes {
 namespace Ids {
-static constexpr AttributeId EmberSampleAttribute  = 0x0000;
+static constexpr AttributeId EmberSampleAttribute = 0x0000;
 static constexpr AttributeId EmberSampleAttribute2 = 0x0001;
 } // namespace Ids
 } // namespace Attributes
@@ -1565,6 +1566,7 @@ static constexpr AttributeId EmberSampleAttribute4 = 0x0001;
 } // namespace Ids
 } // namespace Attributes
 } // namespace SampleMfgSpecificCluster2
+
 
 } // namespace Clusters
 } // namespace app
