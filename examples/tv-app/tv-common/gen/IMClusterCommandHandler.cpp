@@ -4584,9 +4584,7 @@ void DispatchSingleClusterCommand(chip::ClusterId aClusterId, chip::CommandId aC
         clusters::ApplicationLauncher::DispatchServerCommand(apCommandObj, aCommandId, aEndPointId, aReader);
         break;
     case Clusters::AudioOutput::Id:
-        // TODO: Uncomment this line once we are able to register unknown clusters on endpoints dynamically
-        // clusters::AudioOutput::DispatchServerCommand(apCommandObj, aCommandId, aEndPointId, aReader);
-        clusters::DefaultClusterHandler::DispatchServerCommand(apCommandObj, aClusterId, aCommandId, aEndPointId, aReader);
+        clusters::AudioOutput::DispatchServerCommand(apCommandObj, aCommandId, aEndPointId, aReader);
         break;
     case Clusters::Basic::Id:
         clusters::Basic::DispatchServerCommand(apCommandObj, aCommandId, aEndPointId, aReader);
