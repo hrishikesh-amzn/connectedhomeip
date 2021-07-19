@@ -55,7 +55,6 @@ void TLVPrettyPrinter(const char * aFormat, ...)
 UnknownClusterCommandResponse getDoSomethingResponseData()
 {
     string data = "Hello from Server!";
-    string moreData = "Here's more data";
     chip::System::PacketBufferHandle packetBufferHandle = chip::System::PacketBufferHandle::New(chip::System::PacketBuffer::kMaxSize);
     chip::System::PacketBufferTLVWriter pWriter;
     pWriter.Init(std::move(packetBufferHandle), true);
@@ -63,7 +62,6 @@ UnknownClusterCommandResponse getDoSomethingResponseData()
     //TODO: Figure out how to use anonymous tags in starting container. Using Anonymous tags causes failure in CopyElement
     pWriter.StartContainer(chip::TLV::CommonTag(0), chip::TLV::TLVType::kTLVType_Structure, outerContainerType);
     pWriter.PutString(chip::TLV::ContextTag(0), data.c_str());
-    pWriter.PutString(chip::TLV::ContextTag(1), moreData.c_str());
     pWriter.EndContainer(outerContainerType);
     pWriter.Finalize(&packetBufferHandle);
 
