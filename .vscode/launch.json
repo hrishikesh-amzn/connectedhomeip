@@ -84,7 +84,26 @@
                 }
             ]
         },
-
+        {
+            "name": "TVApp (Linux)",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/out/tv-app/chip-tv-app",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "lldb",
+            "preLaunchTask": "Build TV App (Linux)",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ]
+        },
         {
             "name": "Debug Mbed CY8CPROTO_062_4343W",
             "type": "cortex-debug",

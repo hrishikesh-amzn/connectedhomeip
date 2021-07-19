@@ -115,6 +115,16 @@
             }
         },
         {
+            "label": "Build TV App (Linux)",
+            "type": "shell",
+            "command": "scripts/examples/gn_build_example.sh examples/tv-app/linux out/tv-app 'is_debug=true'",
+            "group": "build",
+            "problemMatcher": {
+                "base": "$gcc",
+                "fileLocation": ["relative", "${workspaceFolder}/out/tv-app/"]
+            }
+        },
+        {
             "label": "Build QPG6100 Lock Example",
             "type": "shell",
             "command": "scripts/examples/gn_build_example.sh examples/lock-app/qpg out/qpg6100_lock_app qpg6100",
