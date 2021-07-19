@@ -93,6 +93,7 @@ template("chip_data_model") {
       "${_app_root}/clusters/zll-level-control-server/zll-level-control-server.h",
       "${_app_root}/clusters/zll-on-off-server/zll-on-off-server.h",
       "${_app_root}/clusters/zll-scenes-server/zll-scenes-server.h",
+      #TODO: Find out proper way to link default-cluster-server files. Other Media clusters do not uses this method of linking.
       "${_app_root}/clusters/default-cluster-server/default-cluster-server.h",
       "${_app_root}/clusters/default-cluster-server/default-cluster-server.cpp",
       "${_app_root}/encoder-common.cpp",
